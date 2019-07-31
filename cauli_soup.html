@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Vegan Chef | Roasted Cauliflower Soup</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link href="./cauli_soup.css" type="text/css" rel="stylesheet">
+<script src="cauli_soup.js"></script>
+
+</head>
+<body onload="procedure_completion()">
+  <header>
+    <p class="header" style="color: white;">xxxxxxxxxxxxxxxx</p>
+    <a style="color: #003300; text-decoration: none;" href="index.html"><img src="img/logo.JPG" class="header" width="200px" height="90px"></a>
+    <p class="header" style="color: white;">xxx</p>
+    <img src="img/line.JPG" height="80px" width="10px" class="header">
+    <p class="header" style="color: white;">xxx</p>
+    <p class="header"><a href="nutrients_tracker.html">Nutrients Tracker</a> | <a href="blog.html">The Daily Vegan Blog</a> | <a href="recipes.html" style="color: #e60000">The Vegan Chef Recipes</a> | <a href="grocery_list.html">Grocery List</a> | <a href="about.html">About</a> | <a href="credits.html">Credits</a></p>
+    <!--<p class="header" style="color: white;">xx</p>-->
+  </header>
+<br><br>
+<div id="title">
+  <br>
+  <h1 style="font-size: extra-large;">THE VEGAN CHEF RECIPES</h1>
+  <img src="img/line2.JPG">
+  <h2 style="font-size: large;">A RESOURCE FOR VEGAN CHEFS</h2>
+<br><br>
+</div>
+<br>
+<div id="blog">
+
+<div id="title_image">
+<img src="img/cauli_soup.JPG" height="300px" width="500px" style="align: center;">
+<br><br>
+</div>
+
+<p style="font-size: 15px; text-align: center;">&nbsp&nbsp&nbsp&nbsp <strong><mark style="background-color: white; color: orange;">The roasted cauliflower soup</strong></mark> is both delicious and easy to make! With just six ingredients and a 15 minute preparation time, this <em>yummy</em> soup is the perfect addition to any vegan meal!</p>
+<br><br>
+<div id="line_break">
+<img src="img/line3.JPG" width="600px" height="7px">
+</div>
+
+
+<div id="ingredients">
+<h1 style="text-align: center; color: orange; font-size: 24px;">INGREDIENTS</h1>
+
+<ol>
+<li id="cauliflower"><strong>Two</strong> heads of cauliflower, broken into florets.</li>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="showCauliflower()">Show nutrition information</button>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hideCauliflower()">Hide nutrition information</button>
+<li id="olive_oil"><strong>1/4</strong> cup olive oil.</li>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="showOliveOil()">Show nutrition information</button>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hideOliveOil()">Hide nutrition information</button>
+<li id="onion"><strong>One</strong> large onion, chopped.</li>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="showOnion()">Show nutrition information</button>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hideOnion()">Hide nutrition information</button>
+<li id="garlic"><strong>Four</strong> cloves of garlic, chopped.</li>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="showGarlic()">Show nutrition information</button>&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hideGarlic()">Hide nutrition information</button>
+<li id="water"><strong>Six</strong> cups of water</li>
+<li>Salt and black pepper to taste.</li>
+
+</ol>
+
+</div>
+
+<br><br>
+<div id="line_break">
+<img src="img/line3.JPG" width="600px" height="7px">
+</div>
+
+<div id="procedure">
+
+<h1 style="text-align: center; color: orange; font-size: 24px;">PROCEDURE</h1>
+<br>
+
+
+<button type="button" onclick="step1Completion()" id="step1Completion" class="checkboxes" ><img src="img/unchecked.JPG" width="20px" height="20px"></button><button type="button" onclick="step1Incompletion()" class="checkboxes" id="step1Incompletion" style="visibility: hidden;"><img src="img/checked.JPG" width="20px" height="20px"></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="step1">First, place the cauliflower florets into a large bowl of lightly salted water; allow them to stand for 20 minutes. Drain them well and arrange them on a sheet of heavy aluminum foil on a baking sheet. Pour olive oil evenly on the cauliflower.</label>
+<br><br><button type="button" id="step2Completion" class="checkboxes" onclick="step2Completion()"><img src="img/unchecked.JPG" width="20px" height="20px"></button><button type="button" onclick="step2Incompletion()" class="checkboxes" id="step2Incompletion" style="visibility: hidden;"><img src="img/checked.JPG" width="20px" height="20px"></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="step2">Preheat the oven's broiler and set the oven rack about 6 inches from the heat source.</label>
+<br><br><button type="button" id="step3Completion" class="checkboxes" onclick="step3Completion()"><img src="img/unchecked.JPG" width="20px" height="20px"></button><button type="button" onclick="step3Incompletion()" class="checkboxes" id="step3Incompletion" style="visibility: hidden;"><img src="img/checked.JPG" width="20px" height="20px"></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="step3">Broil the cauliflower until browned for 20 to 30 minutes.</label>
+<br><br><button type="button" id="step4Completion" class="checkboxes" onclick="step4Completion()"><img src="img/unchecked.JPG" width="20px" height="20px"></button><button type="button" onclick="step4Incompletion()" class="checkboxes" id="step4Incompletion" style="visibility: hidden;"><img src="img/checked.JPG" width="20px" height="20px"></button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <label id="step4">Meanwhile, heat the olive oil in a large soup pot and cook the onion until it's translucent (for about 5 minutes). Stir in the garlic and roasted cauliflower. Pour in the water, season it with salt and black pepper, and let it simmer until all the vegetables are tender for about 30 minutes. Blend the soup in the pot with an immersion hand blender until it's creamy and smooth.</lable>
+<h3 style="color: orange; text-align: center;">ENJOY!</h3>
+</div>
+
+
+
+<br><br>
+<div id="line_break">
+<img src="img/line3.JPG" width="600px" height="7px">
+</div>
+
+<div id="info">
+  <h1 style="text-align: center; color: orange; font-size: 24px;">RECIPE INFORMATION</h1>
+  <br>
+  <h5 style="color: orange;">Preparation Information</h5>
+  <ul>
+    <li>Prep Time: 15 minutes</li>
+    <li>Cook time: 1 hour</li>
+    <li>Ready in: 1 hour 35 minutes</li>
+    <li>Servings per recipe: 6</li>
+  </ul>
+  <br>
+  <h5 style="color: orange;">Nutrition Facts for 1 Serving</h5>
+  <ul>
+  <li>Calories: 140</li>
+  <li>Protein: 4.2 g</li>
+  <li>Fat: 9.2 g</li>
+  <li>Calcium: 59 mg</li>
+  <li>Iron: 1 mg</li>
+  <li>Vitamin A: 26 IU</li>
+  <li>Vitamin B12: 0</li>
+  <li>Vitamin C: 91 mg</li>
+  <li>Vitamin D: 0 IU</li>
+  <li>Vitamin K: 54.4 mcg</li>
+</ul>
+<h5 style="color: orange;">Where I learned this recipe from: <mark style="background-color: white; color: black;">Estkay. “Roasted Cauliflower Soup Recipe.” Roasted Cauliflower Soup Recipe, Allrecipes, 19 Mar. 2011, <a href="https://www.allrecipes.com/recipe/216950/roasted-cauliflower-soup/?internalSource=streams&referringId=16570&referringContentType=Recipe%20Hub&clickId=st_trending_b" target="_blank" style="color: #193367;">www.allrecipes.com/recipe/216950/roasted-cauliflower-soup/?internalSource=streams&referringId=16570&referringContentType=Recipe%2BHub&clickId=st_trending_b.</a> Accessed 19 July 2019.</mark></h5>
+</div>
+
+<br><br>
+<div id="line_break">
+<img src="img/line3.JPG" width="600px" height="7px">
+</div>
+<br><br><br>
+<div id="comments">
+<h1 style="color: orange; text-align: center; font-size: 24px;">COMMENTS SECTION</h1>
+<br>
+
+
+
+</div>
+
+<form id="add-to-recipe_commentslist">
+	<label>Please leave your recipe comments here:</label>
+  <br><br>
+	<input type="text" name="recipe_commentslist-item" id="recipe_commentslist-item" size="100px">
+	<button type="submit">Submit comment</button>
+</form>
+<br><br><br>
+<h3 id="recipe_comments_title" style="text-align: center; color: #193367;">PAST RECIPE COMMENTS</h3>
+<ol id="recipe_commentslist" style="border: 2px solid orange;">
+
+
+
+</ol>
+
+<script>
+var date = new Date();
+//array to store values
+// Get form, item, and recipe_commentslist
+var addToRecipe_commentsList = document.querySelector('#add-to-recipe_commentslist');
+var recipe_commentslistItem = document.querySelector('#recipe_commentslist-item');
+var recipe_commentslist = document.querySelector('#recipe_commentslist');
+addToRecipe_commentsList.addEventListener('submit', function (event) {
+localStorage.setItem('recipe_commentslistItems', recipe_commentslist.innerHTML);
+	var saved = localStorage.getItem('recipe_commentslistItems');
+document.getElementById('recipe_comments_title').innerHTML = 'PREVIOUS RECIPE_COMMENTS';
+// If there are any saved items, update our list
+if (saved) {
+	recipe_commentslist.innerHTML = saved;
+}
+	// Don't submit the form
+	event.preventDefault();
+
+	// Ignore it if the recipe_commentslist item is empty
+	if (recipe_commentslistItem.value.length < 1) return;
+
+	// Add item to recipe_commentslist
+	recipe_commentslist.innerHTML += '<br><br>' + recipe_commentslistItem.value + '<br><br>';
+  //document.getElementById('recipe_commentslist').style.border = '3px solid red';
+
+	// Clear input
+	recipe_commentslistItem.value = '';
+
+	// Save the list to localStorage
+	localStorage.setItem('recipe_commentslistItems', recipe_commentslist.innerHTML);
+
+}, false);
+
+// Check for saved recipe_commentslist items
+var saved = localStorage.getItem('recipe_commentslistItems');
+
+// If there are any saved items, update our list
+if (saved) {
+	recipe_commentslist.innerHTML = saved;
+}
+</script>
+
+
+
+<footer>
+  <p class="footer" style="color: white;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+  <p class="footer">Made with love in Schaumburg</p>
+</footer>
+</body>
+</html>

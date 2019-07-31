@@ -1,0 +1,186 @@
+body {
+  font-family: Verdana;
+}
+header {
+    color: #003300;
+    background-color: white;
+}
+#intro {
+  background-color: #b3ffb3;
+  color: #003300;
+  line-height: 2;
+  float: none;
+}
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+}
+#showInfo {
+  display: hidden;
+}
+#calorieInfo {
+  background-color: #b3e6ff;
+  color: maroon;
+}
+#foodsEaten {
+  background-color: #4dc3ff;
+  color: black;
+}
+#data {
+  background-color: #004466;
+  color: lightblue;
+}
+#graph {
+  position: relative;
+  left: 350px;
+}
+#extra1 {
+  visibility: hidden;
+}
+#calories1 {
+  visibility: hidden;
+}
+#calories2 {
+  visibility: hidden;
+}
+#protein1 {
+  visibility: hidden;
+}
+#protein2 {
+  visibility: hidden;
+}
+#fat1 {
+  visibility: hidden;
+}
+#fat2 {
+  visibility: hidden;
+}
+#calcium1 {
+  visibility: hidden;
+}
+#calcium2 {
+  visibility: hidden;
+}
+#iron1 {
+  visibility: hidden;
+}
+#iron2 {
+  visibility: hidden;
+}
+#vitamin_a1 {
+  visibility: hidden;
+}
+#vitamin_a2 {
+  visibility: hidden;
+}
+#vitamin_b1 {
+  visibility: hidden;
+}
+#vitamin_b2 {
+  visibility: hidden;
+}
+#vitamin_c1 {
+  visibility: hidden;
+}
+#vitamin_c2 {
+  visibility: hidden;
+}
+#vitamin_d1 {
+  visibility: hidden;
+}
+#vitamin_d2 {
+  visibility: hidden;
+}
+#vitamin_k1 {
+  visibility: hidden;
+}
+#vitamin_k2 {
+  visibility: hidden;
+}
+#otherFoods {
+  visibility: hidden;
+}
+.addOn {
+  visibility: hidden;
+}
+
+.graphInformationHolders {
+  visibility: hidden;
+  font-size: 0.75px;
+
+}
+
+
+footer {
+    color: #e60000;
+    background-color: white;
+}
+
+a {
+  color: #ff6600;
+}
+.header {
+  display: inline-block;
+}
+
+.footer {
+  display: inline-block;
+}
+
+input {
+  padding: 10px 20px;
+  border: 2px solid maroon;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px 20px;
+  border: 2px solid maroon;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.lightblue {
+  padding: 10px 20px;
+  border: 2px solid lightblue;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+button {
+  background-color: maroon;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.lightblue_button {
+  background-color: lightblue;
+  border: none;
+  color: #004466;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.navy {
+  background-color: navy;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

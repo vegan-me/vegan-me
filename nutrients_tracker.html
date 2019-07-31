@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>VeganMe | Nutrients Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link href="./nutrients_tracker.css" type="text/css" rel="stylesheet">
+<script src="nutrients_tracker.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  function graph() {
+
+    var enteredNutrients = document.getElementById('nutrientSelector').value;
+    if (enteredNutrients != 'default') {
+      document.getElementById('graph').style.height = '500px';
+    }
+    if (enteredNutrients == 'calories') {
+      //alert(caloriesTenthEntry);
+      var caloriesFirstEntry = Number(document.getElementById('caloriesFirstEntry').value);
+      var caloriesSecondEntry = Number(document.getElementById('caloriesSecondEntry').value);
+      var caloriesThirdEntry = Number(document.getElementById('caloriesThirdEntry').value);
+      var caloriesFourEntry = Number(document.getElementById('caloriesFourthEntry').value);
+      var caloriesFiveEntry = Number(document.getElementById('caloriesFifthEntry').value);
+      var caloriesSixthEntry = Number(document.getElementById('caloriesSixthEntry').value);
+      var caloriesSeventhEntry = Number(document.getElementById('caloriesSeventhEntry').value);
+      var caloriesEighthEntry = Number(document.getElementById('caloriesEighthEntry').value);
+      var caloriesNinthEntry = Number(document.getElementById('caloriesNinthEntry').value);
+      var caloriesTenthEntry = Number(document.getElementById('caloriesTenthEntry').value);
+      //alert(caloriesTenthEntry);
+    if (caloriesTenthEntry != 0) {
+    var data = google.visualization.arrayToDataTable([
+
+
+
+      ['Food Entry #', 'Calories', 'Goal'],
+      ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+      ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+      ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+      ['F.E. 4',  Number(document.getElementById('caloriesFourthEntry').value),  Number(document.getElementById('calories').value)],
+      ['F.E. 5',  Number(document.getElementById('caloriesFifthEntry').value),  Number(document.getElementById('calories').value)],
+      ['F.E. 6',  Number(document.getElementById('caloriesSixthEntry').value),  Number(document.getElementById('calories').value)],
+      ['F.E. 7',  Number(document.getElementById('caloriesSeventhEntry').value),  Number(document.getElementById('calories').value)],
+      ['F.E. 8',  Number(document.getElementById('caloriesEighthEntry').value),  Number(document.getElementById('calories').value)],
+      ['F.E. 9',  Number(document.getElementById('caloriesNinthEntry').value),  Number(document.getElementById('calories').value)],
+      ['F.E. 10',  Number(document.getElementById('caloriesTenthEntry').value),  Number(document.getElementById('calories').value)],
+    ]);
+}
+if (caloriesTenthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 4',  Number(document.getElementById('caloriesFourthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 5',  Number(document.getElementById('caloriesFifthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 6',  Number(document.getElementById('caloriesSixthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 7',  Number(document.getElementById('caloriesSeventhEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 8',  Number(document.getElementById('caloriesEighthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 9',  Number(document.getElementById('caloriesNinthEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesNinthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 4',  Number(document.getElementById('caloriesFourthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 5',  Number(document.getElementById('caloriesFifthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 6',  Number(document.getElementById('caloriesSixthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 7',  Number(document.getElementById('caloriesSeventhEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 8',  Number(document.getElementById('caloriesEighthEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesEighthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 4',  Number(document.getElementById('caloriesFourthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 5',  Number(document.getElementById('caloriesFifthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 6',  Number(document.getElementById('caloriesSixthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 7',  Number(document.getElementById('caloriesSeventhEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesSeventhEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 4',  Number(document.getElementById('caloriesFourthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 5',  Number(document.getElementById('caloriesFifthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 6',  Number(document.getElementById('caloriesSixthEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesSixthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 4',  Number(document.getElementById('caloriesFourthEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 5',  Number(document.getElementById('caloriesFifthEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesFifthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+  ['F.E. 4',  Number(document.getElementById('caloriesFourthEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesFourthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 3',  Number(document.getElementById('caloriesThirdEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesThirdEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+  ['Food Entry 2',  Number(document.getElementById('caloriesSecondEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+
+if (caloriesSecondEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Calories', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('caloriesFirstEntry').value),  Number(document.getElementById('calories').value)],
+]);
+}
+if (caloriesFirstEntry == 0) {
+  alert('Please enter a food to view your calorie progress for today!');
+}
+
+
+    var options = {
+      title: "Calories Consumption Trend",
+      //curveType: 'function',
+      legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+    chart.draw(data, options);
+  }
+
+
+  else if (enteredNutrients == 'protein') {
+
+    var proteinFirstEntry = Number(document.getElementById('proteinFirstEntry').value);
+    var proteinSecondEntry = Number(document.getElementById('proteinSecondEntry').value);
+    var proteinThirdEntry = Number(document.getElementById('proteinThirdEntry').value);
+    var proteinFourthEntry = Number(document.getElementById('proteinFourthEntry').value);
+    var proteinFifthEntry = Number(document.getElementById('proteinFifthEntry').value);
+    var proteinSixthEntry = Number(document.getElementById('proteinSixthEntry').value);
+    var proteinSeventhEntry = Number(document.getElementById('proteinSeventhEntry').value);
+    var proteinEighthEntry = Number(document.getElementById('proteinEighthEntry').value);
+    var proteinNinthEntry = Number(document.getElementById('proteinNinthEntry').value);
+    var proteinTenthEntry = Number(document.getElementById('proteinTenthEntry').value);
+    /*alert(proteinTenthEntry);
+    alert(proteinFirstEntry);
+    alert(proteinSecondEntry);
+    alert(proteinThirdEntry);
+    alert(proteinFourthEntry);
+    alert(proteinFifthEntry);
+
+    alert(proteinNinthEntry);
+    */
+
+    if (proteinTenthEntry != 0) {
+    var data = google.visualization.arrayToDataTable([
+
+
+
+      ['Food Entry #', 'Protein', 'Goal'],
+      ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+      ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+      ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+      ['F.E. 4',  Number(document.getElementById('proteinFourthEntry').value),  Number(document.getElementById('protein').value)],
+      ['F.E. 5',  Number(document.getElementById('proteinFifthEntry').value),  Number(document.getElementById('protein').value)],
+      ['F.E. 6',  Number(document.getElementById('proteinSixthEntry').value),  Number(document.getElementById('protein').value)],
+      ['F.E. 7',  Number(document.getElementById('proteinSeventhEntry').value),  Number(document.getElementById('protein').value)],
+      ['F.E. 8',  Number(document.getElementById('proteinEighthEntry').value),  Number(document.getElementById('protein').value)],
+      ['F.E. 9',  Number(document.getElementById('proteinNinthEntry').value),  Number(document.getElementById('protein').value)],
+      ['F.E. 10',  Number(document.getElementById('proteinTenthEntry').value),  Number(document.getElementById('protein').value)],
+    ]);
+}
+if (proteinTenthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 4',  Number(document.getElementById('proteinFourthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 5',  Number(document.getElementById('proteinFifthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 6',  Number(document.getElementById('proteinSixthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 7',  Number(document.getElementById('proteinSeventhEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 8',  Number(document.getElementById('proteinEighthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 9',  Number(document.getElementById('proteinNinthEntry').value),  Number(document.getElementById('protein').value)],
+]);
+}
+if (caloriesNinthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 4',  Number(document.getElementById('proteinFourthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 5',  Number(document.getElementById('proteinFifthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 6',  Number(document.getElementById('proteinSixthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 7',  Number(document.getElementById('proteinSeventhEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 8',  Number(document.getElementById('proteinEighthEntry').value),  Number(document.getElementById('protein').value)],
+]);
+}
+if (caloriesEighthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 4',  Number(document.getElementById('proteinFourthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 5',  Number(document.getElementById('proteinFifthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 6',  Number(document.getElementById('proteinSixthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 7',  Number(document.getElementById('proteinSeventhEntry').value),  Number(document.getElementById('protein').value)],
+]);
+}
+if (caloriesSeventhEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 4',  Number(document.getElementById('proteinFourthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 5',  Number(document.getElementById('proteinFifthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 6',  Number(document.getElementById('proteinSixthEntry').value),  Number(document.getElementById('protein').value)],
+]);
+
+}
+if (caloriesSixthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 4',  Number(document.getElementById('proteinFourthEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 5',  Number(document.getElementById('proteinFifthEntry').value),  Number(document.getElementById('protein').value)],
+]);
+
+}
+if (caloriesFifthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+  ['F.E. 4',  Number(document.getElementById('proteinFourthEntry').value),  Number(document.getElementById('protein').value)],
+]);
+
+}
+if (caloriesFourthEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 3',  Number(document.getElementById('proteinThirdEntry').value),  Number(document.getElementById('protein').value)],
+]);
+
+}
+if (caloriesThirdEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+  ['Food Entry 2',  Number(document.getElementById('proteinSecondEntry').value),  Number(document.getElementById('protein').value)],
+]);
+
+}
+
+if (caloriesSecondEntry == 0) {
+var data = google.visualization.arrayToDataTable([
+
+
+
+  ['Food Entry #', 'Protein', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('proteinFirstEntry').value),  Number(document.getElementById('protein').value)],
+]);
+
+}
+if (caloriesFirstEntry == 0) {
+  alert('Please enter a food to view your protein progress for today!');
+}
+
+
+
+  var options = {
+    title: "Protein Consumption Trend",
+    //curveType: 'function',
+    legend: { position: 'bottom' }
+  };
+
+  var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+  chart.draw(data, options);
+}
+
+
+else if (enteredNutrients == 'fat') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Fat (Grams)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('fatFirstEntry').value),  Number(document.getElementById('fat').value)],
+  ['Food Entry 2',  Number(document.getElementById('fatSecondEntry').value),  Number(document.getElementById('fat').value)],
+  ['Food Entry 3',  Number(document.getElementById('fatThirdEntry').value),  Number(document.getElementById('fat').value)],
+  ['F.E. 4',  Number(document.getElementById('fatFourthEntry').value),  Number(document.getElementById('fat').value)],
+  ['F.E. 5',  Number(document.getElementById('fatFifthEntry').value),  Number(document.getElementById('fat').value)],
+  ['F.E. 6',  Number(document.getElementById('fatSixthEntry').value),  Number(document.getElementById('fat').value)],
+  ['F.E. 7',  Number(document.getElementById('fatSeventhEntry').value),  Number(document.getElementById('fat').value)],
+  ['F.E. 8',  Number(document.getElementById('fatEighthEntry').value),  Number(document.getElementById('fat').value)],
+  ['F.E. 9',  Number(document.getElementById('fatNinthEntry').value),  Number(document.getElementById('fat').value)],
+  ['F.E. 10',  Number(document.getElementById('fatTenthEntry').value),  Number(document.getElementById('fat').value)]
+]);
+
+var options = {
+  title: "Fat Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+else if (enteredNutrients == 'calcium') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Calcium (mg)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('calciumFirstEntry').value),  Number(document.getElementById('calcium').value)],
+  ['Food Entry 2',  Number(document.getElementById('calciumSecondEntry').value),  Number(document.getElementById('calcium').value)],
+  ['Food Entry 3',  Number(document.getElementById('calciumThirdEntry').value),  Number(document.getElementById('calcium').value)],
+  ['F.E. 4',  Number(document.getElementById('calciumFourthEntry').value),  Number(document.getElementById('calcium').value)],
+  ['F.E. 5',  Number(document.getElementById('calciumFifthEntry').value),  Number(document.getElementById('calcium').value)],
+  ['F.E. 6',  Number(document.getElementById('calciumSixthEntry').value),  Number(document.getElementById('calcium').value)],
+  ['F.E. 7',  Number(document.getElementById('calciumSeventhEntry').value),  Number(document.getElementById('calcium').value)],
+  ['F.E. 8',  Number(document.getElementById('calciumEighthEntry').value),  Number(document.getElementById('calcium').value)],
+  ['F.E. 9',  Number(document.getElementById('calciumNinthEntry').value),  Number(document.getElementById('calcium').value)],
+  ['F.E. 10',  Number(document.getElementById('calciumTenthEntry').value),  Number(document.getElementById('calcium').value)]
+]);
+
+var options = {
+  title: "Calcium Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+else if (enteredNutrients == 'iron') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Iron (mg)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('ironFirstEntry').value),  Number(document.getElementById('iron').value)],
+  ['Food Entry 2',  Number(document.getElementById('ironSecondEntry').value),  Number(document.getElementById('iron').value)],
+  ['Food Entry 3',  Number(document.getElementById('ironThirdEntry').value),  Number(document.getElementById('iron').value)],
+  ['F.E. 4',  Number(document.getElementById('ironFourthEntry').value),  Number(document.getElementById('iron').value)],
+  ['F.E. 5',  Number(document.getElementById('ironFifthEntry').value),  Number(document.getElementById('iron').value)],
+  ['F.E. 6',  Number(document.getElementById('ironSixthEntry').value),  Number(document.getElementById('iron').value)],
+  ['F.E. 7',  Number(document.getElementById('ironSeventhEntry').value),  Number(document.getElementById('iron').value)],
+  ['F.E. 8',  Number(document.getElementById('ironEighthEntry').value),  Number(document.getElementById('iron').value)],
+  ['F.E. 9',  Number(document.getElementById('ironNinthEntry').value),  Number(document.getElementById('iron').value)],
+  ['F.E. 10',  Number(document.getElementById('ironTenthEntry').value),  Number(document.getElementById('iron').value)]
+]);
+
+var options = {
+  title: "Iron Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+else if (enteredNutrients == 'vitamin_a') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Vitamin A (IU)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('vitamin_aFirstEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['Food Entry 2',  Number(document.getElementById('vitamin_aSecondEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['Food Entry 3',  Number(document.getElementById('vitamin_aThirdEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['F.E. 4',  Number(document.getElementById('vitamin_aFourthEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['F.E. 5',  Number(document.getElementById('vitamin_aFifthEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['F.E. 6',  Number(document.getElementById('vitamin_aSixthEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['F.E. 7',  Number(document.getElementById('vitamin_aSeventhEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['F.E. 8',  Number(document.getElementById('vitamin_aEighthEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['F.E. 9',  Number(document.getElementById('vitamin_aNinthEntry').value),  Number(document.getElementById('vitamin_a').value)],
+  ['F.E. 10',  Number(document.getElementById('vitamin_aTenthEntry').value),  Number(document.getElementById('vitamin_a').value)]
+]);
+
+var options = {
+  title: "Vitamin A Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+else if (enteredNutrients == 'vitamin_b') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Vitamin B (micrograms)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('vitamin_bFirstEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['Food Entry 2',  Number(document.getElementById('vitamin_bSecondEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['Food Entry 3',  Number(document.getElementById('vitamin_bThirdEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['F.E. 4',  Number(document.getElementById('vitamin_bFourthEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['F.E. 5',  Number(document.getElementById('vitamin_bFifthEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['F.E. 6',  Number(document.getElementById('vitamin_bSixthEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['F.E. 7',  Number(document.getElementById('vitamin_bSeventhEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['F.E. 8',  Number(document.getElementById('vitamin_bEighthEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['F.E. 9',  Number(document.getElementById('vitamin_bNinthEntry').value),  Number(document.getElementById('vitamin_b12').value)],
+  ['F.E. 10',  Number(document.getElementById('vitamin_bTenthEntry').value),  Number(document.getElementById('vitamin_b12').value)]
+]);
+
+var options = {
+  title: "Vitamin B Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+else if (enteredNutrients == 'vitamin_c') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Vitamin C (mg)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('vitamin_cFirstEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['Food Entry 2',  Number(document.getElementById('vitamin_cSecondEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['Food Entry 3',  Number(document.getElementById('vitamin_cThirdEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['F.E. 4',  Number(document.getElementById('vitamin_cFourthEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['F.E. 5',  Number(document.getElementById('vitamin_cFifthEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['F.E. 6',  Number(document.getElementById('vitamin_cSixthEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['F.E. 7',  Number(document.getElementById('vitamin_cSeventhEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['F.E. 8',  Number(document.getElementById('vitamin_cEighthEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['F.E. 9',  Number(document.getElementById('vitamin_cNinthEntry').value),  Number(document.getElementById('vitamin_c').value)],
+  ['F.E. 10',  Number(document.getElementById('vitamin_cTenthEntry').value),  Number(document.getElementById('vitamin_c').value)]
+]);
+
+var options = {
+  title: "Vitamin C Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+else if (enteredNutrients == 'vitamin_d') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Vitamin D (IU)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('vitamin_dFirstEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['Food Entry 2',  Number(document.getElementById('vitamin_dSecondEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['Food Entry 3',  Number(document.getElementById('vitamin_dThirdEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['F.E. 4',  Number(document.getElementById('vitamin_dFourthEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['F.E. 5',  Number(document.getElementById('vitamin_dFifthEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['F.E. 6',  Number(document.getElementById('vitamin_dSixthEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['F.E. 7',  Number(document.getElementById('vitamin_dSeventhEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['F.E. 8',  Number(document.getElementById('vitamin_dEighthEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['F.E. 9',  Number(document.getElementById('vitamin_dNinthEntry').value),  Number(document.getElementById('vitamin_d').value)],
+  ['F.E. 10',  Number(document.getElementById('vitamin_dTenthEntry').value),  Number(document.getElementById('vitamin_d').value)]
+]);
+
+var options = {
+  title: "Vitamin D Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+else if (enteredNutrients == 'vitamin_k') {
+var data = google.visualization.arrayToDataTable([
+  ['Food Entry #', 'Vitamin K (micrograms)', 'Goal'],
+  ['Food Entry 1',  Number(document.getElementById('vitamin_kFirstEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['Food Entry 2',  Number(document.getElementById('vitamin_kSecondEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['Food Entry 3',  Number(document.getElementById('vitamin_kThirdEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['F.E. 4',  Number(document.getElementById('vitamin_kFourthEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['F.E. 5',  Number(document.getElementById('vitamin_kFifthEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['F.E. 6',  Number(document.getElementById('vitamin_kSixthEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['F.E. 7',  Number(document.getElementById('vitamin_kSeventhEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['F.E. 8',  Number(document.getElementById('vitamin_kEighthEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['F.E. 9',  Number(document.getElementById('vitamin_kNinthEntry').value),  Number(document.getElementById('vitamin_k').value)],
+  ['F.E. 10',  Number(document.getElementById('vitamin_kTenthEntry').value),  Number(document.getElementById('vitamin_k').value)]
+]);
+
+var options = {
+  title: "Vitamin K Consumption Trend",
+  //curveType: 'function',
+  legend: { position: 'bottom' }
+};
+
+var chart = new google.visualization.LineChart(document.getElementById('graph'));
+
+chart.draw(data, options);
+}
+
+
+
+  }
+</script>
+</head>
+<body onload="hidePartTwo()">
+<header>
+  <p class="header" style="color: white;">xxxxxxxxxxxxxxxx</p>
+  <a style="color: #003300; text-decoration: none;" href="index.html"><img src="img/logo.JPG" class="header" width="200px" height="90px"></a>
+  <p class="header" style="color: white;">xxx</p>
+  <img src="img/line.JPG" height="80px" width="10px" class="header">
+  <p class="header" style="color: white;">xxx</p>
+  <p class="header"><a href="nutrients_tracker.html" style="color: #e60000">Nutrients Tracker</a> | <a href="blog.html">The Daily Vegan Blogs</a> | <a href="recipes.html">The Vegan Chef Recipes</a> | <a href="grocery_list.html">Grocery List</a> | <a href="about.html">About</a> | <a href="credits.html">Credits</a></p>
+  <!--<p class="header" style="color: white;">xx</p>-->
+</header>
+<br>
+<div id="intro">
+<br>
+<h2 style="text-align: center;"><u>Nutrients Tracker Steps</u></h2>
+
+<ol>
+<li><a href="#calorieInfo" style="color: #003300;">First, please enter some information for the program to calculate your daily recommended nutrients intake.</a></li>
+<li><a href="#foodsEaten" style="color: #003300;">Next, please enter what foods you have recently eaten for the program to check whether you have consumed enough nutrients for the day.</a></li>
+<li><a href="#data" style="color: #003300;">Finally, you can view how many nutrients you consumed in relation to your daily recommendations!</a></li>
+</ol>
+<p style="text-align: center;"><em>Want to know how the program calculates your daily recommended amount of nutrients? Click <a href="#" target="_blank" style="color: #003300;">here</a> for more information!</em></p>
+<!--<br>-->
+</div>
+<div id="calorieInfo">
+<br><br>
+<h3 style="text-align: center;">Step 1: Daily Recommended Nutrients Intake</h3>
+<p style="text-align: center;">Please enter some information for the program to calculate your daily recommended nutrients intake.</p>
+<br>
+<p style="text-align: center;" class="button"><button type="button" onclick="hide()" id="hide()">Click to hide the questionnaire below</button></p>
+<p style="text-align: center;" class="button"><button type="button" style="visibility: hidden;" onclick="show()" id="show()">Click to show the questionnaire below</button></p>
+
+  <form name="info">
+    <table id="table">
+    <tr>
+      <th>Part A: Questionnaire</th></h3>
+      <th id="partb_title">Part B: Results*</th></h3>
+    </tr>
+    <tr>
+    <td>
+    <ol>
+    <li>Please enter your first name (optional): <input type="text" name="name"></li>
+    <br><br>
+    <li>Please select your gender:
+    <select id="gender">
+      <option value="default">Select gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="rather_not_say">Rather not say</option>
+    </select>
+  </li>
+    <br><br>
+    <li>Please enter your age: <input name="age" type="number"></li>
+    <br><br>
+    <li>Please enter your height:
+    <input name="height" type="number">
+    <select id="height_units">
+      <option value="in">inches</option>
+      <option value="cm">centimeters</option>
+    </select>
+  </li>
+    <br><br>
+    <li>Please enter your weight:
+    <input name="weight" type="number">
+    <select id="weight_units">
+      <option value="lbs">pounds</option>
+      <option value="kg">kilograms</option>
+    </select>
+  </li>
+    <br><br>
+    <li>Please select your activity level:
+    <select id="activity_level">
+      <option value="default">Select your activity level</option>
+      <option value="low">Low (< 4 hrs/week)</option>
+      <option value="moderate">Moderate (4-8 hrs/week)</option>
+      <option value="high">High (> 8 hrs/week)</option>
+    </select>
+  </li>
+    <br><br>
+    <li>
+      Do you smoke? <input type="radio" name="smoke" value="yes">Yes <input name="smoke" type="radio" value="no">No
+    </li>
+    <br><br>
+    <li>
+    Finally, please enter any dietary conditions that you have:
+    <br><br>
+    <input type="checkbox" id="Pregnancy">Pregnancy/Lactating
+    <br>
+    <input type="checkbox" id="InheritedMetabolicDiseases">Inherited Metabolic Diseases
+    <br>
+    <input type="checkbox" id="HeartDisease">Heart Disease
+    <br>
+    <input type="checkbox" id="Diabetes">Diabetes
+    <br>
+    <input type="checkbox" id="None">None
+  </li>
+    <br><br>
+    <button type="button" onclick="main()">Submit information!</button>
+<br><br>
+  </form>
+</td>
+</div>
+<div>
+<td id="showInfo">
+  <!--<p>Info</p>-->
+
+  <p>*If you already know your nutrition information, then you can manually enter it in this cell.</p>
+  <br>
+  <p>Recommended calorie intake: <input id="calories" style="color: #00aaff; font-weight: bold;" class="stats"></input> calories</p>
+  <p>Recommended protein intake: <input id="protein" style="color: blue; font-weight: bold;"></input> grams</p>
+  <p>Recommended fat intake: <input id="fat" style="color: #e60000; font-weight: bold;"></input> grams</p>
+  <p>Recommended calcium intake: <input id="calcium" style="color: gray; font-weight: bold;"> mg</input></p>
+  <p>Recommended iron intake: <input id="iron" style="color: brown; font-weight: bold;"></input> mg</p>
+  <p>Recommended Vitamin A intake: <input id="vitamin_a" style="color: purple; font-weight: bold;"> IU</input></p>
+  <p>Recommended Vitamin B12 intake: <input id="vitamin_b12" style="color: pink; font-weight: bold;"> micrograms</input></p>
+  <p>Recommended Vitamin C intake: <input id="vitamin_c" style="color: orange; font-weight: bold;"> mg</input></p>
+  <p>Recommended Vitamin D intake: <input id="vitamin_d" style="color: turquoise; font-weight: bold;"> IU</input></p>
+  <p>Recommended Vitamin K intake: <input id="vitamin_k" style="color: maroon; font-weight: bold;"> micrograms</input></p>
+
+</td>
+</div>
+</table>
+<br><br>
+</div>
+<div id="foodsEaten">
+  <br><br>
+  <h3 style="text-align: center;">Step 2: Please enter foods that you have eaten</h3>
+  <br>
+  <form action="">
+    <label>Food: </label>
+    <input list="foods" id="foodsInput" style="border: 2px solid navy;">
+    <datalist id="foods">
+      <option value="Apple"/>
+      <option value="Apricot"/>
+      <option value="Avocado"/>
+      <option value="Banana"/>
+      <option value="Blackberry (cups)"/>
+      <option value="Blueberry (cups)"/>
+      <option value="Cherry (cups)"/>
+      <option value="Coconut"/>
+      <option value="Cucumber"/>
+      <option value="Date"/>
+      <option value="Fig"/>
+      <option value="Gooseberry"/>
+      <option value="Grape (cups)"/>
+      <option value="Raisin (cups)"/>
+      <option value="Grapefruit"/>
+      <option value="Guava"/>
+      <option value="Jackfruit (cups)"/>
+      <option value="Kiwifruit"/>
+      <option value="Lemon"/>
+      <option value="Lime"/>
+      <option value="Lychee (cups)"/>
+      <option value="Cantaloupe (cups)"/>
+      <option value="Mango"/>
+      <option value="Peach"/>
+      <option value="Pear"/>
+      <option value="Plum"/>
+      <option value="Prune (cups)"/>
+      <option value="Pineapple (cups)"/>
+      <option value="Raspberry (cups)"/>
+      <option value="Honeydew (cups)"/>
+      <option value="Watermelon (cups)"/>
+      <option value="Nectarine"/>
+      <option value="Orange"/>
+      <option value="Tangerine"/>
+      <option value="Papaya (cups)"/>
+      <option value="Star fruit (cups)"/>
+      <option value="Strawberry"/>
+      <option value="Artichoke"/>
+      <option value="Eggplant (cups)"/>
+      <option value="Asparagus (cups)"/>
+      <option value="Black Beans (cups)"/>
+      <option value="Corn (ears)"/>
+      <option value="Chickpeas (cups)"/>
+      <option value="Green Beans (cups)"/>
+      <option value="Kidney Beans (cups)"/>
+      <option value="Lentils (cups)"/>
+      <option value="Squash"/>
+      <option value="Soybeans (cups)"/>
+      <option value="Peas (cups)"/>
+      <option value="Tomato"/>
+      <option value="Broccoli"/>
+      <option value="Brussel Sprouts (cups)"/>
+      <option value="Cabbage (cups)"/>
+      <option value="Cauliflower (cups)"/>
+      <option value="Celery"/>
+      <option value="Kale (cups)"/>
+      <option value="Spinach (cups)"/>
+      <option value="Turnip"/>
+      <option value="Lettuce (cups)"/>
+      <option value="Mushrooms (cups)"/>
+      <option value="Okra (cups)"/>
+      <option value="Onion (cups)"/>
+      <option value="Yam (cups)"/>
+      <option value="Bell pepper"/>
+      <option value="Chili pepper (cups)"/>
+      <option value="Jalapeno (cups)"/>
+      <option value="Beetroot"/>
+      <option value="Carrot"/>
+      <option value="Radish (cups)"/>
+      <option value="Potato"/>
+      <option value="Sweet Potato"/>
+      <option value="Brown rice (cups)"/>
+      <option value="Cornflakes (cups)"/>
+      <option value="Quinoa (cups)"/>
+      <option value="Oats (cups)"/>
+      <option value="Rice cake"/>
+      <option value="Whole-grain bread"/>
+      <option value="Bread rolls"/>
+      <option value="White Rice (cups)"/>
+      <option value="Pasta (servings)"/>
+      <option value="Couscous (cups)"/>
+      <option value="Tortillas"/>
+      <option value="White Bread"/>
+      <option value="Bagel"/>
+      <option value="Donut"/>
+      <option value="Granola (cups)"/>
+      <option value="Pancake"/>
+      <option value="Pita bread"/>
+      <option value="Mini-wheats"/>
+      <option value="Muffin"/>
+      <option value="Toast"/>
+      <option value="Waffles"/>
+      <option value="Pudding (ounces)"/>
+      <option value="Cashews (ounces)"/>
+      <option value="Almonds (cups)"/>
+      <option value="Brazil nuts (cups)"/>
+      <option value="chestnuts (ounces)"/>
+      <option value="Hazelnuts (cups)"/>
+      <option value="Macadamia Nuts (cups)"/>
+      <option value="Pistachios (cups)"/>
+      <option value="Walnuts (cups)"/>
+      <option value="Sesame Seeds (cups)"/>
+      <option value="Pumpkin Seeds (cups)"/>
+      <option value="Almond Butter (cups)"/>
+      <option value="Peanut Butter (cups)"/>
+      <option value="Olives (ounces)"/>
+      <option value="Olive Oil (cups)"/>
+      <option value="Almond Milk (cups)"/>
+      <option value="Soy Milk (cups)"/>
+      <option value="Coconut Milk (cups)"/>
+      <option value="Rice Milk (cups)"/>
+      <option value="Soy Yogurt (cups)"/>
+      <option value="Tempeh (cups)"/>
+      <option value="Tofu (cups)"/>
+      <option value="Seitan (cups)"/>
+      <option value="Textured Vegetable Protein (cups)"/>
+      <option value="Soy ice cream (cups)"/>
+      <option id="1" value=""/>
+      <option id="2" value=""/>
+      <option id="3" value=""/>
+    </datalist>
+    Quantity = <input type="number" id="quantity" style="border: 2px solid navy;"> units
+    <button type="button" id="existingFoods" onclick="enterExistingFoods()" class="navy">Submit</button>
+    <br><br>
+    <div style="display: inline-block;">
+    <label id="foodOne"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodTwo"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodThree"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodFour"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodFive"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <br><br><br>
+    <label id="foodSix"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodSeven"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodEight"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodNine"></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <label id="foodTen"></label>
+  </div>
+    <br><br>
+    <p id="extra1">Please enter the following information about this food (if you are having trouble finding the nutrient information about a certain food, use <a href="https://nutritiondata.self.com/" target="_blank" style="color: #004466;">this link</a> to aid in your search!):</p>
+    <p id="calories1">Number of calories: <input id="calories2" style="color: #00aaff; font-weight: bold; border: 2px solid navy;" type="number"></p>
+    <p id="protein1">Amount of protein: <input id="protein2" style="color: blue; font-weight: bold; border: 2px solid navy;" type="number"> g </p>
+    <p id="fat1">Amount of fat: <input id="fat2" style="color: #e60000; font-weight: bold; border: 2px solid navy;" type="number"> g </p>
+    <p id="calcium1">Amount of calcium: <input id="calcium2" style="color: gray; font-weight: bold; border: 2px solid navy;" type="number"> mg </p>
+    <p id="iron1">Amount of iron: <input id="iron2" style="color: brown; font-weight: bold; border: 2px solid navy;" type="number"> mg </p>
+    <p id="vitamin_a1">Amount of Vitamin A: <input id="vitamin_a2" style="color: purple; font-weight: bold; border: 2px solid navy;" type="number"> IU </p>
+    <p id="vitamin_b1">Amount of Vitamin B: <input id="vitamin_b2" style="color: pink; font-weight: bold; border: 2px solid navy;" type="number"> micrograms </p>
+    <p id="vitamin_c1">Amount of Vitamin C: <input id="vitamin_c2" style="color: orange; font-weight: bold; border: 2px solid navy;" type="number"> mg </p>
+    <p id="vitamin_d1">Amount of Vitamin D: <input id="vitamin_d2" style="color: turquoise; font-weight: bold; border: 2px solid navy;" type="number"> IU </p>
+    <p id="vitamin_k1">Amount of Vitamin K: <input id="vitamin_k2" style="color: maroon; font-weight: bold; border: 2px solid navy;" type="number"> micrograms </p>
+
+    <br>
+    <button type="button" id="otherFoods" onclick="enterOtherFoods()" class="navy">Submit</button>
+  </form>
+
+
+
+</div>
+
+<div id="data">
+<br><br>
+<h3 style="text-align: center;">Step 3: Analytics and Nutrients Goals</h3>
+<input id="caloriesAddOn" class="addOn" type="number">
+<input id="proteinAddOn" class="addOn" type="number">
+<input id="fatAddOn" class="addOn" type="number">
+<input id="calciumAddOn" class="addOn" type="number">
+<input id="ironAddOn" class="addOn" type="number">
+<input id="vitamin_aAddOn" class="addOn" type="number">
+<input id="vitamin_bAddOn" class="addOn" type="number">
+<input id="vitamin_cAddOn" class="addOn" type="number">
+<input id="vitamin_dAddOn" class="addOn" type="number">
+<input id="vitamin_kAddOn" class="addOn" type="number">
+<br><br>
+<h4 style="text-align: center;">GOALS <mark style="color: lightgreen; background-color: #004466;">MET</mark>/<mark style="color: pink; background-color: #004466;">NOT MET</mark>.</h4>
+<p id="caloriesGoal">Please enter foods to check whether you have met your calorie goal.</p>
+<p id="proteinGoal">Please enter foods to check whether you have met your protein goal.</p>
+<p id="fatGoal">Please enter foods to check whether you have met your fat goal.</p>
+<p id="calciumGoal">Please enter foods to check whether you have met your calcium goal.</p>
+<p id="ironGoal">Please enter foods to check whether you have met your iron goal.</p>
+<p id="vitamina_goal">Please enter foods to check whether you have met your Vitamin A goal.</p>
+<p id="vitaminb_goal">Please enter foods to check whether you have met your Vitamin B goal.</p>
+<p id="vitaminc_goal">Please enter foods to check whether you have met your Vitamin C goal.</p>
+<p id="vitamind_goal">Please enter foods to check whether you have met your Vitamin D goal.</p>
+<p id="vitamink_goal">Please enter foods to check whether you have met your Vitamin K goal.</p>
+<br><br>
+<input id="clickCount" class="graphInformationHolders" type="number">
+<input type="number" class="graphInformationHolders" id="caloriesFirstEntry">
+<input type="number" class="graphInformationHolders" id="caloriesSecondEntry">
+<input type="number" class="graphInformationHolders" id="caloriesThirdEntry">
+<input type="number" class="graphInformationHolders" id="caloriesFourthEntry">
+<input type="number" class="graphInformationHolders" id="caloriesFifthEntry">
+<input type="number" class="graphInformationHolders" id="caloriesSixthEntry">
+<input type="number" class="graphInformationHolders" id="caloriesSeventhEntry">
+<input type="number" class="graphInformationHolders" id="caloriesEighthEntry">
+<input type="number" class="graphInformationHolders" id="caloriesNinthEntry">
+<input type="number" class="graphInformationHolders" id="caloriesTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="proteinFirstEntry">
+<input type="number" class="graphInformationHolders" id="proteinSecondEntry">
+<input type="number" class="graphInformationHolders" id="proteinThirdEntry">
+<input type="number" class="graphInformationHolders" id="proteinFourthEntry">
+<input type="number" class="graphInformationHolders" id="proteinFifthEntry">
+<input type="number" class="graphInformationHolders" id="proteinSixthEntry">
+<input type="number" class="graphInformationHolders" id="proteinSeventhEntry">
+<input type="number" class="graphInformationHolders" id="proteinEighthEntry">
+<input type="number" class="graphInformationHolders" id="proteinNinthEntry">
+<input type="number" class="graphInformationHolders" id="proteinTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="fatFirstEntry">
+<input type="number" class="graphInformationHolders" id="fatSecondEntry">
+<input type="number" class="graphInformationHolders" id="fatThirdEntry">
+<input type="number" class="graphInformationHolders" id="fatFourthEntry">
+<input type="number" class="graphInformationHolders" id="fatFifthEntry">
+<input type="number" class="graphInformationHolders" id="fatSixthEntry">
+<input type="number" class="graphInformationHolders" id="fatSeventhEntry">
+<input type="number" class="graphInformationHolders" id="fatEighthEntry">
+<input type="number" class="graphInformationHolders" id="fatNinthEntry">
+<input type="number" class="graphInformationHolders" id="fatTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="calciumFirstEntry">
+<input type="number" class="graphInformationHolders" id="calciumSecondEntry">
+<input type="number" class="graphInformationHolders" id="calciumThirdEntry">
+<input type="number" class="graphInformationHolders" id="calciumFourthEntry">
+<input type="number" class="graphInformationHolders" id="calciumFifthEntry">
+<input type="number" class="graphInformationHolders" id="calciumSixthEntry">
+<input type="number" class="graphInformationHolders" id="calciumSeventhEntry">
+<input type="number" class="graphInformationHolders" id="calciumEighthEntry">
+<input type="number" class="graphInformationHolders" id="calciumNinthEntry">
+<input type="number" class="graphInformationHolders" id="calciumTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="calciumFirstEntry">
+<input type="number" class="graphInformationHolders" id="calciumSecondEntry">
+<input type="number" class="graphInformationHolders" id="calciumThirdEntry">
+<input type="number" class="graphInformationHolders" id="calciumFourthEntry">
+<input type="number" class="graphInformationHolders" id="calciumFifthEntry">
+<input type="number" class="graphInformationHolders" id="calciumSixthEntry">
+<input type="number" class="graphInformationHolders" id="calciumSeventhEntry">
+<input type="number" class="graphInformationHolders" id="calciumEighthEntry">
+<input type="number" class="graphInformationHolders" id="calciumNinthEntry">
+<input type="number" class="graphInformationHolders" id="calciumTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="ironFirstEntry">
+<input type="number" class="graphInformationHolders" id="ironSecondEntry">
+<input type="number" class="graphInformationHolders" id="ironThirdEntry">
+<input type="number" class="graphInformationHolders" id="ironFourthEntry">
+<input type="number" class="graphInformationHolders" id="ironFifthEntry">
+<input type="number" class="graphInformationHolders" id="ironSixthEntry">
+<input type="number" class="graphInformationHolders" id="ironSeventhEntry">
+<input type="number" class="graphInformationHolders" id="ironEighthEntry">
+<input type="number" class="graphInformationHolders" id="ironNinthEntry">
+<input type="number" class="graphInformationHolders" id="ironTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="vitamin_aFirstEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aSecondEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aThirdEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aFourthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aFifthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aSixthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aSeventhEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aEighthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aNinthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_aTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="vitamin_bFirstEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bSecondEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bThirdEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bFourthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bFifthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bSixthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bSeventhEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bEighthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bNinthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_bTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="vitamin_cFirstEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cSecondEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cThirdEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cFourthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cFifthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cSixthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cSeventhEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cEighthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cNinthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_cTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="vitamin_dFirstEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dSecondEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dThirdEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dFourthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dFifthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dSixthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dSeventhEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dEighthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dNinthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_dTenthEntry">
+
+<input type="number" class="graphInformationHolders" id="vitamin_kFirstEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kSecondEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kThirdEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kFourthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kFifthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kSixthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kSeventhEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kEighthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kNinthEntry">
+<input type="number" class="graphInformationHolders" id="vitamin_kTenthEntry">
+
+
+
+<h4 style="text-align: center;">Nutrient Consumption Progress Chart</h4>
+<p style="text-align: center;">Select which nutrient you would like to view your progress for:
+<select id="nutrientSelector" class="lightblue">
+  <option value="default">Select a nutrient</option>
+  <option value="calories">Calories</option>
+  <option value="protein">Protein</option>
+  <option value="fat">Fat</option>
+  <option value="calcium">Calcium</option>
+  <option value="iron">Iron</option>
+  <option value="vitamin_a">Vitamin A</option>
+  <option value="vitamin_b">Vitamin B</option>
+  <option value="vitamin_c">Vitamin C</option>
+  <option value="vitamin_d">Vitamin D</option>
+  <option value="vitamin_k">Vitamin K</option>
+</select>
+<button type="button" onclick="graph()" class="lightblue_button">View graph</button>
+</p>
+<br><br><br>
+<div id="graph" style="width: 900px; height: 500px"></div>
+<br><br><br>
+
+
+
+</div>
+<br><br><br>
+<footer>
+  <p class="footer" style="color: white">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+  <p class="footer">Made with love in Schaumburg</p>
+</footer>
+</body>
+</html>

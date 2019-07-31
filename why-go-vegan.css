@@ -1,0 +1,77 @@
+body {
+  font-family: Verdana;
+}
+header {
+    color: #003300;
+    background-color: white;
+}
+footer {
+    color: #e60000;
+    background-color: white;
+    display: inline-block;
+}
+
+input {
+  padding: 10px 20px;
+  border: 2px solid green;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+a {
+  color: #ff6600;
+}
+.header {
+  display: inline-block;
+}
+
+.footer {
+  display: inline-block;
+}
+
+#title {
+  font-family: "Palatino";
+  text-align: center;
+  background-color: #ccffdd;
+}
+#blogTitle {
+
+  font-size: 40px;
+  text-align: center;
+  color: darkgreen;
+
+}
+
+#title_image {
+  text-align: center;
+}
+
+#blog {
+  font-size: 18px;
+  line-height: 1.5;
+}
+#worksCited {
+  font-family: "Times New Roman";
+}
+sup {
+  font-size: 11px;
+}
+.hang {
+text-indent: -4em;
+margin-left: 6em;
+} /* https://slewis.org/indents-and-hanging-indents/*/
+
+#line_break {
+  text-align: center;
+}

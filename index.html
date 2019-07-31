@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>VeganMe | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link href="./style.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+  <p class="header" style="color: white;">xxxxxxxxxxxxxxxx</p>
+  <a style="color: #003300; text-decoration: none;" href="index.html"><img src="img/logo.JPG" class="header" width="200px" height="90px"></a>
+  <p class="header" style="color: white;">xxx</p>
+  <img src="img/line.JPG" height="80px" width="10px">
+  <p class="header" style="color: white;">xxx</p>
+  <p class="header"><a href="nutrients_tracker.html">Nutrients Tracker</a> | <a href="blog.html">The Daily Vegan Blogs</a> | <a href="recipes.html">The Vegan Chef Recipes</a> | <a href="grocery_list.html">Grocery List</a> | <a href="about.html">About</a> | <a href="credits.html">Credits</a></p>
+  <!--<p class="header" style="color: white;">xx</p>-->
+</header>
+<br><br>
+<div id="middle">
+  <br><br><br>
+  <!-- got help for slideshow code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto -->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="img/one.JPG" style="width="400px" height="400px"">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="img/two.JPG" style="width="400px" height="400px"">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <a href="nutrients_tracker.html" target="_blank"><img src="img/three.JPG" style="width="400px" height="400px""></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <a href="blog.html" target="_blank"><img src="img/four.JPG" style="width="400px" height="400px""></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <a href="recipes.html" target="_blank"><img src="img/five.JPG" style="width="400px" height="400px""></a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <a href="#" target="_blank"><img src="img/six.JPG" style="width="400px" height="400px""></a>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <a href="#" target="_blank"><img src="img/nine.JPG" style="width="400px" height="400px""></a>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<br><br>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7500); // Change image every 2 seconds
+}
+</script>
+
+</div>
+<br><br>
+<div id="featuredItems" style="text-align: center;">
+<h1 style="text-align: center; color: green;">FEATURED ITEMS</h1>
+<br>
+<p>
+<a href="nutrients_tracker.html"><img src="img/nutrients_tracker_promo.JPG" width="475px" height="350px"></a>
+<a href="why-go-vegan.html"><img src="img/why-go-vegan.JPG" width="475px" height="350px"></a>
+<a href="cauli_soup.html"><img src="img/cauli_soup.JPG" width="475px" height="350px"></a>
+</p>
+</div>
+<br><br><br><br><br>
+
+<div id="application" style="background-color: #b3ffb3;">
+<br>
+<p style="text-align: center; color: #e60000;"><strong>WANT TO BE A BLOGGER FOR <em>THE DAILY VEGAN BLOG</em>? WANT TO CONTRIBUTE <u>YOUR</u> RECIPES TO THE <EM>VEGAN CHEF RECIPES</EM>? CLICK <a href="mailto:veganme2019@gmail.com">HERE</a> TO SEND YOUR REQUEST TO THE EDITOR!</STRONG></p>
+<br>
+</div>
+
+<br><br><br>
+<footer>
+  <p class="footer" style="color: white">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+  <p class="footer">Made with love in Schaumburg</p>
+</footer>
+</body>
+</html>

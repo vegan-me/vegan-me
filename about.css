@@ -1,0 +1,44 @@
+body {
+  font-family: Verdana;
+}
+header {
+    color: #003300;
+    background-color: white;
+}
+footer {
+    color: #e60000;
+    background-color: white;
+}
+
+a {
+  color: #ff6600;
+}
+.header {
+  display: inline-block;
+}
+
+.footer {
+  display: inline-block;
+}
+
+#title {
+  font-family: "Palatino";
+  text-align: center;
+  background-color: #ccffdd;
+}
+#about_project p {
+  font-size: 18px;
+  line-height: 2;
+}
+#about_me {
+  background-color: #ccffdd;
+}
+
+#about_me p {
+  font-size: 18px;
+  line-height: 2;
+}
+mark {
+  background-color: white;
+  color: darkgreen;
+}

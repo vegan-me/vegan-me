@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<title>Grocery List Tips | Home</title>
+<link href="./grocery_list.css" type="text/css" rel="stylesheet">
+<script src="grocery_list.js"></script>
+</head>
+<body>
+  <header>
+    <p class="header" style="color: white;">xxxxxxxxxxxxxxxx</p>
+    <a style="color: #003300; text-decoration: none;" href="index.html"><img src="img/logo.JPG" class="header" width="200px" height="90px"></a>
+    <p class="header" style="color: white;">xxx</p>
+    <img src="img/line.JPG" height="80px" width="10px" class="header">
+    <p class="header" style="color: white;">xxx</p>
+    <p class="header"><a href="nutrients_tracker.html">Nutrients Tracker</a> | <a href="blog.html">The Daily Vegan Blog</a> | <a href="recipes.html">The Vegan Chef Recipes</a> | <a href="grocery_list.html" style="color: #e60000">Grocery List</a> | <a href="about.html">About</a> | <a href="credits.html">Credits</a></p>
+    <!--<p class="header" style="color: white;">xx</p>-->
+  </header>
+
+<br><br><br>
+<div id="title">
+  <br>
+  <h1 style="font-size: extra-large;">DESIGNING YOUR VEGAN GROCERY LIST</h1>
+  <img src="img/line4.JPG" height="7px" width="300px">
+  <h2 style="font-size: large;">ENSURING THAT YOUR GROCERY LIST IS RIGHT FOR <U>YOU</U>!</h2>
+  <br><br>
+</div>
+<br>
+<h3 style="color: #4db8ff;">Quick Access:</h3>
+<ul id="navbar">
+
+  <br>
+  <li><a class="active" href="#intro">Introduction</a></li><br>
+  <li><a href="#fruits" style="background-color: #ff6666; color: white;">Fruits</a></li><br>
+  <li><a href="#vegetables" style="background-color: lightgreen;">Vegetables</a></li><br>
+  <li><a href="#starches" style="background-color: #ffe699;">Starches</a></li><br>
+  <li><a href="#healthy_fats" style="background-color: #dab3ff;">Healthy Fats</a></li><br>
+  <li><a href="#alternatives" style="background-color: maroon; color: white;">Dairy and Meat Alternatives</a></li><br>
+  <li><a href="#final" class="active">Final Grocery List</a></li><br>
+</ul>
+<div id="intro">
+  <p style="font-size: 18px;"><mark style="background-color: white; color: #4db8ff;"><strong>Designing a vegan grocery list can be <em>hard</em>, especially if you are new to veganism.</strong></mark> However, there are so many amazing vegan options out there, and vegan shopping can become an enjoyable and essential part of your vegan experience - if you shop the right way, of course!</p>
+  <p style="font-size: 18px;">Shopping begins with the grocery list. A successful shopping trip relies on a smart grocery list. But some vegans do not know what to put on their grocery lists! They may be trapped between their old world of meat and their new world of leafy greens, and are confused about what exactly shoould be eating. If you are one of those vegans, and are worried about not getting the vegan food best for you, don't worry! By the end of this interactive guide you would have mastered the technique of building a proper vegan grocery list!</p>
+  <br>
+  <p style="font-size: 18px;">A good grocery list (regardless if it's vegan) should be driven by two needs - nutrition and your tastes. If these two needs are in balance (one could make the argument that nutrition should carry a bit more importance than your tastes as well - it's just up to you, really!), then you have a good grocery list! In this guide you will get to choose the vegan foods that you like from each food group (fruits, vegetables, starches, etc.) to build your very own grocery list around NUTRIENTS <u>and</u> TASTE! So without further ado, let's start our vegan grocery list journey by picking out some fruits!</p>
+</div>
+<br><br><br>
+
+
+<div id="body">
+
+<div id="fruits">
+<h1 style="color: red;"><u>fruits</u></h1>
+<br>
+<p style="color: red;"><strong>Fruits are packed with vitamins and other essential nutrients and are essential for a growing, healthy body, are a <em>must</em> when building a vegan grocery list!</p></strong>
+<br>
+
+<form action="">
+  <label>Please enter six fruits into the grocery list based on your tastes. You may select fruits from the list below or type out your own fruit. </label>
+  <input list="foods_fruit" id="foodsInput_fruit" style="border: 2px solid red;">
+  <datalist id="foods_fruit">
+    <option value="Apple"/>
+    <option value="Apricot"/>
+    <option value="Avocado"/>
+    <option value="Banana"/>
+    <option value="Blackberry (cups)"/>
+    <option value="Blueberry (cups)"/>
+    <option value="Cherry (cups)"/>
+    <option value="Coconut"/>
+    <option value="Cucumber"/>
+    <option value="Date"/>
+    <option value="Fig"/>
+    <option value="Gooseberry"/>
+    <option value="Grape (cups)"/>
+    <option value="Raisin (cups)"/>
+    <option value="Grapefruit"/>
+    <option value="Guava"/>
+    <option value="Jackfruit (cups)"/>
+    <option value="Kiwifruit"/>
+    <option value="Lemon"/>
+    <option value="Lime"/>
+    <option value="Lychee (cups)"/>
+    <option value="Cantaloupe (cups)"/>
+    <option value="Mango"/>
+    <option value="Peach"/>
+    <option value="Pear"/>
+    <option value="Plum"/>
+    <option value="Prune (cups)"/>
+    <option value="Pineapple (cups)"/>
+    <option value="Raspberry (cups)"/>
+    <option value="Honeydew (cups)"/>
+    <option value="Watermelon (cups)"/>
+    <option value="Nectarine"/>
+    <option value="Orange"/>
+    <option value="Tangerine"/>
+    <option value="Papaya (cups)"/>
+    <option value="Star fruit (cups)"/>
+    <option value="Strawberry"/>
+  </datalist>
+  <button type="button" onclick="submitFruits()" class="red">Submit Fruit</button>
+  </form>
+<br><br>
+<h3 style="color: red;">Entered Fruits:</h3>
+<ol>
+<li style="color: lightgray;"><input type="checkbox" id="fruit1"><label id="fruitOne">Fruit 1</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="fruit2"><label id="fruitTwo">Fruit 2</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="fruit3"><label id="fruitThree">Fruit 3</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="fruit4"><label id="fruitFour">Fruit 4</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="fruit5"><label id="fruitFive">Fruit 5</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="fruit6"><label id="fruitSix">Fruit 6</label></li><br>
+</ol>
+<br>
+<button type="button" onclick="deleteFruits()" class="red">Remove Selected Fruits</button>
+<button type="button" onclick="clearFruits()" class="red">Clear Fruit Combination</button>
+<br><br>
+<p><mark style="color: red;"><strong>Now that you have chosen 6 fruits to potentially add to your grocery list based on your tastes</mark></strong>, it is now time to view these fruits' nutrition values in order for you to full decide whether they belong in your grocery list. If you are unsure about your dietary needs, then we recommend you heading over to our <a href="nutrients_tracker.html" target="_blank">Nutrients Tracker</a> and filling out a little questionarre. If a particular fruit is not to your liking, then feel free to delete it by selecting the checkbox next to the fruit and clicking the <em>'Remove Selected Fruits'</em> button. In order to remove all 6 fruits from your grocery shortlist, click on the <em>'Clear Fruit Combination'</em> button. Enjoy!</p>
+<br>
+<h2 style="color: red;">Selected Fruit Nutrition Values:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hideFruitNutrition()" id="hideFruitNutrition" class="red">Hide Fruit Nutrition Information</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="showFruitNutrition()" class="red" id="showFruitNutrition" style="visibility: hidden;">Show Fruit Nutrition Information</button></h2>
+<br>
+<div id="fruitNutrition">
+<h3 id="fruit1_title" style="color: lightgray;">Fruit 1 Nutrition Information:</h3>
+<ul id="fruit1Info" style="color: lightgray; background-color: white;">
+<li id="fruit1_calories"></li>
+<li id="fruit1_protein"></li>
+<li id="fruit1_fat"></li>
+<li id="fruit1_iron"></li>
+<li id="fruit1_calcium"></li>
+<li id="fruit1_vitaminA"></li>
+<li id="fruit1_vitaminB"></li>
+<li id="fruit1_vitaminC"></li>
+<li id="fruit1_vitaminD"></li>
+<li id="fruit1_vitaminK"></li>
+</ul>
+
+<h3 id="fruit2_title" style="color: lightgray;">Fruit 2 Nutrition Information:</h3>
+<ul id="fruit2Info" style="color: lightgray; background-color: white;">
+<li id="fruit2_calories"></li>
+<li id="fruit2_protein"></li>
+<li id="fruit2_fat"></li>
+<li id="fruit2_iron"></li>
+<li id="fruit2_calcium"></li>
+<li id="fruit2_vitaminA"></li>
+<li id="fruit2_vitaminB"></li>
+<li id="fruit2_vitaminC"></li>
+<li id="fruit2_vitaminD"></li>
+<li id="fruit2_vitaminK"></li>
+</ul>
+
+<h3 id="fruit3_title" style="color: lightgray;">Fruit 3 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="fruit3Info">
+<li id="fruit3_calories"></li>
+<li id="fruit3_protein"></li>
+<li id="fruit3_fat"></li>
+<li id="fruit3_iron"></li>
+<li id="fruit3_calcium"></li>
+<li id="fruit3_vitaminA"></li>
+<li id="fruit3_vitaminB"></li>
+<li id="fruit3_vitaminC"></li>
+<li id="fruit3_vitaminD"></li>
+<li id="fruit3_vitaminK"></li>
+</ul>
+
+<h3 id="fruit4_title" style="color: lightgray;">Fruit 4 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="fruit4Info">
+<li id="fruit4_calories"></li>
+<li id="fruit4_protein"></li>
+<li id="fruit4_fat"></li>
+<li id="fruit4_iron"></li>
+<li id="fruit4_calcium"></li>
+<li id="fruit4_vitaminA"></li>
+<li id="fruit4_vitaminB"></li>
+<li id="fruit4_vitaminC"></li>
+<li id="fruit4_vitaminD"></li>
+<li id="fruit4_vitaminK"></li>
+</ul>
+
+<h3 id="fruit5_title" style="color: lightgray;">Fruit 5 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="fruit5Info">
+<li id="fruit5_calories"></li>
+<li id="fruit5_protein"></li>
+<li id="fruit5_fat"></li>
+<li id="fruit5_iron"></li>
+<li id="fruit5_calcium"></li>
+<li id="fruit5_vitaminA"></li>
+<li id="fruit5_vitaminB"></li>
+<li id="fruit5_vitaminC"></li>
+<li id="fruit5_vitaminD"></li>
+<li id="fruit5_vitaminK"></li>
+</ul>
+
+<h3 id="fruit6_title" style="color: lightgray;">Fruit 6 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="fruit6Info">
+<li id="fruit6_calories"></li>
+<li id="fruit6_protein"></li>
+<li id="fruit6_fat"></li>
+<li id="fruit6_iron"></li>
+<li id="fruit6_calcium"></li>
+<li id="fruit6_vitaminA"></li>
+<li id="fruit6_vitaminB"></li>
+<li id="fruit6_vitaminC"></li>
+<li id="fruit6_vitaminD"></li>
+<li id="fruit6_vitaminK"></li>
+</ul>
+</div>
+
+
+
+</div>
+<br><br><br>
+</div>
+
+<div id="vegetables">
+  <h1 style="color: green;"><u>vegetables</u></h1>
+  <br>
+  <p style="color: green;"><strong>Vegetables are nutrional powerhouses packed with vitamins, minerals, and fiber. They're also low on calories, meaning that you can't overeat them!</p></strong>
+  <br>
+
+  <form action="">
+    <label>Please enter 6 vegetables into the grocery list based on your tastes. You may select vegetables from the list below or type out your own vegetable. </label>
+    <input list="foods_vegetable" id="foodsInput_vegetable" style="border: 2px solid green;">
+    <datalist id="foods_vegetable">
+      <option value="Artichoke"/>
+      <option value="Eggplant (cups)"/>
+      <option value="Asparagus (cups)"/>
+      <option value="Black Beans (cups)"/>
+      <option value="Corn (ears)"/>
+      <option value="Chickpeas (cups)"/>
+      <option value="Green Beans (cups)"/>
+      <option value="Kidney Beans (cups)"/>
+      <option value="Lentils (cups)"/>
+      <option value="Squash"/>
+      <option value="Soybeans (cups)"/>
+      <option value="Peas (cups)"/>
+      <option value="Tomato"/>
+      <option value="Broccoli"/>
+      <option value="Brussel Sprouts (cups)"/>
+      <option value="Cabbage (cups)"/>
+      <option value="Cauliflower (cups)"/>
+      <option value="Celery"/>
+      <option value="Kale (cups)"/>
+      <option value="Spinach (cups)"/>
+      <option value="Turnip"/>
+      <option value="Lettuce (cups)"/>
+      <option value="Mushrooms (cups)"/>
+      <option value="Okra (cups)"/>
+      <option value="Onion (cups)"/>
+      <option value="Yam (cups)"/>
+      <option value="Bell pepper"/>
+      <option value="Chili pepper (cups)"/>
+      <option value="Jalapeno (cups)"/>
+      <option value="Beetroot"/>
+      <option value="Carrot"/>
+      <option value="Radish (cups)"/>
+      <option value="Potato"/>
+      <option value="Sweet Potato"/>
+    </datalist>
+    <button type="button" onclick="submitvegetables()" class="green">Submit Vegetable</button>
+    </form>
+  <br><br>
+  <h3 style="color: green;">Entered Vegetables:</h3>
+  <ol>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable1"><label id="vegetableOne">Vegetable 1</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable2"><label id="vegetableTwo">Vegetable 2</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable3"><label id="vegetableThree">Vegetable 3</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable4"><label id="vegetableFour">Vegetable 4</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable5"><label id="vegetableFive">Vegetable 5</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable6"><label id="vegetableSix">Vegetable 6</label></li><br>
+  </ol>
+  <br>
+  <button type="button" onclick="deletevegetables()" class="green">Remove Selected Vegetables</button>
+  <button type="button" onclick="clearvegetables()" class="green">Clear Vegetable Combination</button>
+  <br><br>
+  <p><mark style="color: green;"><strong>Now that you have chosen 6 vegetables to potentially add to your grocery list based on your tastes</mark></strong>, it is now time to view these vegetables' nutrition values in order for you to full decide whether they belong in your grocery list. If you are unsure about your dietary needs, then we recommend you heading over to our <a href="nutrients_tracker.html" target="_blank">Nutrients Tracker</a> and filling out a little questionarre. If a particular vegetable is not to your liking, then feel free to delete it by selecting the checkbox next to the vegetable and clicking the <em>'Remove Selected vegetables'</em> button. In order to remove all 6 vegetables from your grocery shortlist, click on the <em>'Clear vegetable Combination'</em> button. Enjoy!</p>
+  <br>
+  <h2 style="color: green;">Selected Vegetable Nutrition Values:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hidevegetableNutrition()" class="green" id="hidevegetableNutrition">Hide vegetable Nutrition Information</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" class="green" onclick="showvegetableNutrition()" id="showvegetableNutrition" style="visibility: hidden;">Show vegetable Nutrition Information</button></h2>
+  <br>
+  <div id="vegetableNutrition">
+  <h3 id="vegetable1_title" style="color: lightgray;">Vegetable 1 Nutrition Information:</h3>
+  <ul id="vegetable1Info" style="color: lightgray; background-color: white;">
+  <li id="vegetable1_calories"></li>
+  <li id="vegetable1_protein"></li>
+  <li id="vegetable1_fat"></li>
+  <li id="vegetable1_iron"></li>
+  <li id="vegetable1_calcium"></li>
+  <li id="vegetable1_vitaminA"></li>
+  <li id="vegetable1_vitaminB"></li>
+  <li id="vegetable1_vitaminC"></li>
+  <li id="vegetable1_vitaminD"></li>
+  <li id="vegetable1_vitaminK"></li>
+  </ul>
+
+  <h3 id="vegetable2_title" style="color: lightgray;">Vegetable 2 Nutrition Information:</h3>
+  <ul id="vegetable2Info" style="color: lightgray; background-color: white;">
+  <li id="vegetable2_calories"></li>
+  <li id="vegetable2_protein"></li>
+  <li id="vegetable2_fat"></li>
+  <li id="vegetable2_iron"></li>
+  <li id="vegetable2_calcium"></li>
+  <li id="vegetable2_vitaminA"></li>
+  <li id="vegetable2_vitaminB"></li>
+  <li id="vegetable2_vitaminC"></li>
+  <li id="vegetable2_vitaminD"></li>
+  <li id="vegetable2_vitaminK"></li>
+  </ul>
+
+  <h3 id="vegetable3_title" style="color: lightgray;">Vegetable 3 Nutrition Information:</h3>
+  <ul style="color: lightgray; background-color: white;" id="vegetable3Info">
+  <li id="vegetable3_calories"></li>
+  <li id="vegetable3_protein"></li>
+  <li id="vegetable3_fat"></li>
+  <li id="vegetable3_iron"></li>
+  <li id="vegetable3_calcium"></li>
+  <li id="vegetable3_vitaminA"></li>
+  <li id="vegetable3_vitaminB"></li>
+  <li id="vegetable3_vitaminC"></li>
+  <li id="vegetable3_vitaminD"></li>
+  <li id="vegetable3_vitaminK"></li>
+  </ul>
+
+  <h3 id="vegetable4_title" style="color: lightgray;">Vegetable 4 Nutrition Information:</h3>
+  <ul style="color: lightgray; background-color: white;" id="vegetable4Info">
+  <li id="vegetable4_calories"></li>
+  <li id="vegetable4_protein"></li>
+  <li id="vegetable4_fat"></li>
+  <li id="vegetable4_iron"></li>
+  <li id="vegetable4_calcium"></li>
+  <li id="vegetable4_vitaminA"></li>
+  <li id="vegetable4_vitaminB"></li>
+  <li id="vegetable4_vitaminC"></li>
+  <li id="vegetable4_vitaminD"></li>
+  <li id="vegetable4_vitaminK"></li>
+  </ul>
+
+  <h3 id="vegetable5_title" style="color: lightgray;">Vegetable 5 Nutrition Information:</h3>
+  <ul style="color: lightgray; background-color: white;" id="vegetable5Info">
+  <li id="vegetable5_calories"></li>
+  <li id="vegetable5_protein"></li>
+  <li id="vegetable5_fat"></li>
+  <li id="vegetable5_iron"></li>
+  <li id="vegetable5_calcium"></li>
+  <li id="vegetable5_vitaminA"></li>
+  <li id="vegetable5_vitaminB"></li>
+  <li id="vegetable5_vitaminC"></li>
+  <li id="vegetable5_vitaminD"></li>
+  <li id="vegetable5_vitaminK"></li>
+  </ul>
+
+  <h3 id="vegetable6_title" style="color: lightgray;">Vegetable 6 Nutrition Information:</h3>
+  <ul style="color: lightgray; background-color: white;" id="vegetable6Info">
+  <li id="vegetable6_calories"></li>
+  <li id="vegetable6_protein"></li>
+  <li id="vegetable6_fat"></li>
+  <li id="vegetable6_iron"></li>
+  <li id="vegetable6_calcium"></li>
+  <li id="vegetable6_vitaminA"></li>
+  <li id="vegetable6_vitaminB"></li>
+  <li id="vegetable6_vitaminC"></li>
+  <li id="vegetable6_vitaminD"></li>
+  <li id="vegetable6_vitaminK"></li>
+  </ul>
+  </div>
+
+
+
+  </div>
+
+  <br><br><br>
+</div>
+<div id="starches">
+<h1 style="color: #cc9900;"><u>starches</u></h1>
+<br>
+<p style="color: #cc9900;"><strong>Starches contain large quantities of carbohydrates that fuel your body throughout the day. Starches include whole grains (oats, quinoa, rice, etc.), refined grains (pasta, white bread, tortillas, etc.), and legumes (beans and sprouts).</p></strong>
+<br>
+
+<form action="">
+  <label>Please enter 6 starches into the grocery list based on your tastes. You may select starches from the list below or type out your own starch. </label>
+  <input list="foods_starch" id="foodsInput_starch" style="border: 2px solid #cc9900;">
+  <datalist id="foods_starch">
+    <option value="Brown rice (cups)"/>
+    <option value="Cornflakes (cups)"/>
+    <option value="Quinoa (cups)"/>
+    <option value="Oats (cups)"/>
+    <option value="Rice cake"/>
+    <option value="Whole-grain bread"/>
+    <option value="Bread rolls"/>
+    <option value="White Rice (cups)"/>
+    <option value="Pasta (servings)"/>
+    <option value="Couscous (cups)"/>
+    <option value="Tortillas"/>
+    <option value="White Bread"/>
+    <option value="Bagel"/>
+    <option value="Donut"/>
+    <option value="Granola (cups)"/>
+    <option value="Pancake"/>
+    <option value="Pita bread"/>
+    <option value="Mini-wheats"/>
+    <option value="Muffin"/>
+    <option value="Toast"/>
+    <option value="Waffles"/>
+  </datalist>
+  <button type="button" onclick="submitstarches()" class="yellow">Submit Starch</button>
+  </form>
+<br><br>
+<h3 style="color: #cc9900;">Entered starches:</h3>
+<ol>
+<li style="color: lightgray;"><input type="checkbox" id="starch1"><label id="starchOne">starch 1</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="starch2"><label id="starchTwo">starch 2</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="starch3"><label id="starchThree">starch 3</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="starch4"><label id="starchFour">starch 4</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="starch5"><label id="starchFive">starch 5</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="starch6"><label id="starchesix">starch 6</label></li><br>
+</ol>
+<br>
+<button type="button" onclick="deletestarches()" class="yellow">Remove Selected starches</button>
+<button type="button" onclick="clearstarches()" class="yellow">Clear starch Combination</button>
+<br><br>
+<p><mark style="color: #cc9900;"><strong>Now that you have chosen 6 starches to potentially add to your grocery list based on your tastes</mark></strong>, it is now time to view these starches' nutrition values in order for you to full decide whether they belong in your grocery list. If you are unsure about your dietary needs, then we recommend you heading over to our <a href="nutrients_tracker.html" target="_blank">Nutrients Tracker</a> and filling out a little questionarre. If a particular starch is not to your liking, then feel free to delete it by selecting the checkbox next to the starch and clicking the <em>'Remove Selected starches'</em> button. In order to remove all 6 starches from your grocery shortlist, click on the <em>'Clear starch Combination'</em> button. Enjoy!</p>
+<br>
+<h2 style="color: #cc9900;">Selected starch Nutrition Values:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hidestarchNutrition()" id="hidestarchNutrition" class="yellow">Hide starch Nutrition Information</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="showstarchNutrition()" id="showstarchNutrition" class="yellow" style="visibility: hidden;">Show starch Nutrition Information</button></h2>
+<br>
+<div id="starchNutrition">
+<h3 id="starch1_title" style="color: lightgray;">starch 1 Nutrition Information:</h3>
+<ul id="starch1Info" style="color: lightgray; background-color: white;">
+<li id="starch1_calories"></li>
+<li id="starch1_protein"></li>
+<li id="starch1_fat"></li>
+<li id="starch1_iron"></li>
+<li id="starch1_calcium"></li>
+<li id="starch1_vitaminA"></li>
+<li id="starch1_vitaminB"></li>
+<li id="starch1_vitaminC"></li>
+<li id="starch1_vitaminD"></li>
+<li id="starch1_vitaminK"></li>
+</ul>
+
+<h3 id="starch2_title" style="color: lightgray;">starch 2 Nutrition Information:</h3>
+<ul id="starch2Info" style="color: lightgray; background-color: white;">
+<li id="starch2_calories"></li>
+<li id="starch2_protein"></li>
+<li id="starch2_fat"></li>
+<li id="starch2_iron"></li>
+<li id="starch2_calcium"></li>
+<li id="starch2_vitaminA"></li>
+<li id="starch2_vitaminB"></li>
+<li id="starch2_vitaminC"></li>
+<li id="starch2_vitaminD"></li>
+<li id="starch2_vitaminK"></li>
+</ul>
+
+<h3 id="starch3_title" style="color: lightgray;">starch 3 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="starch3Info">
+<li id="starch3_calories"></li>
+<li id="starch3_protein"></li>
+<li id="starch3_fat"></li>
+<li id="starch3_iron"></li>
+<li id="starch3_calcium"></li>
+<li id="starch3_vitaminA"></li>
+<li id="starch3_vitaminB"></li>
+<li id="starch3_vitaminC"></li>
+<li id="starch3_vitaminD"></li>
+<li id="starch3_vitaminK"></li>
+</ul>
+
+<h3 id="starch4_title" style="color: lightgray;">starch 4 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="starch4Info">
+<li id="starch4_calories"></li>
+<li id="starch4_protein"></li>
+<li id="starch4_fat"></li>
+<li id="starch4_iron"></li>
+<li id="starch4_calcium"></li>
+<li id="starch4_vitaminA"></li>
+<li id="starch4_vitaminB"></li>
+<li id="starch4_vitaminC"></li>
+<li id="starch4_vitaminD"></li>
+<li id="starch4_vitaminK"></li>
+</ul>
+
+<h3 id="starch5_title" style="color: lightgray;">starch 5 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="starch5Info">
+<li id="starch5_calories"></li>
+<li id="starch5_protein"></li>
+<li id="starch5_fat"></li>
+<li id="starch5_iron"></li>
+<li id="starch5_calcium"></li>
+<li id="starch5_vitaminA"></li>
+<li id="starch5_vitaminB"></li>
+<li id="starch5_vitaminC"></li>
+<li id="starch5_vitaminD"></li>
+<li id="starch5_vitaminK"></li>
+</ul>
+
+<h3 id="starch6_title" style="color: lightgray;">starch 6 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="starch6Info">
+<li id="starch6_calories"></li>
+<li id="starch6_protein"></li>
+<li id="starch6_fat"></li>
+<li id="starch6_iron"></li>
+<li id="starch6_calcium"></li>
+<li id="starch6_vitaminA"></li>
+<li id="starch6_vitaminB"></li>
+<li id="starch6_vitaminC"></li>
+<li id="starch6_vitaminD"></li>
+<li id="starch6_vitaminK"></li>
+</ul>
+</div>
+
+
+
+</div>
+<br><br><br>
+</div>
+
+
+<div id="healthy_fats">
+<h1 style="color: purple;"><u>healthy fats</u></h1>
+<br>
+<p style="color: purple;"><strong>Not all fat is bad. Unprocessed plant fats are actually healthy, promoting growth and development of the body. Examples of healthy fats include nuts and seeds.</p></strong>
+<br>
+
+<form action="">
+  <label>Please enter six healthy fats into the grocery list based on your tastes. You may select the healthy fats from the list below or type out your own healthy fat. </label>
+  <input list="foods_healthy_fat" id="foodsInput_healthy_fat" style="border: 2px solid #dab3ff;">
+  <datalist id="foods_healthy_fat">
+    <option value="Cashews (ounces)"/>
+    <option value="Almonds (cups)"/>
+    <option value="Brazil nuts (cups)"/>
+    <option value="chestnuts (ounces)"/>
+    <option value="Hazelnuts (cups)"/>
+    <option value="Macadamia Nuts (cups)"/>
+    <option value="Pistachios (cups)"/>
+    <option value="Walnuts (cups)"/>
+    <option value="Sesame Seeds (cups)"/>
+    <option value="Pumpkin Seeds (cups)"/>
+    <option value="Almond Butter (cups)"/>
+    <option value="Peanut Butter (cups)"/>
+    <option value="Olives (ounces)"/>
+    <option value="Olive Oil (cups)"/>
+  </datalist>
+  <button type="button" onclick="submithealthy_fats()" class="purple">Submit Healthy Fat</button>
+  </form>
+<br><br>
+<h3 style="color: purple;">Entered healthy fats:</h3>
+<ol>
+<li style="color: lightgray;"><input type="checkbox" id="healthy_fat1"><label id="healthy_fatOne">Healthy Fat 1</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="healthy_fat2"><label id="healthy_fatTwo">Healthy Fat 2</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="healthy_fat3"><label id="healthy_fatThree">Healthy Fat 3</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="healthy_fat4"><label id="healthy_fatFour">Healthy Fat 4</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="healthy_fat5"><label id="healthy_fatFive">Healthy Fat 5</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="healthy_fat6"><label id="healthy_fatSix">Healthy Fat 6</label></li><br>
+</ol>
+<br>
+<button type="button" onclick="deletehealthy_fats()" class="purple">Remove Selected Healthy Fats</button>
+<button type="button" onclick="clearhealthy_fats()" class="purple">Clear Healthy Fat Combination</button>
+<br><br>
+<p><mark style="color: purple;"><strong>Now that you have chosen 6 healthy fats to potentially add to your grocery list based on your tastes</mark></strong>, it is now time to view these healthy_fats' nutrition values in order for you to full decide whether they belong in your grocery list. If you are unsure about your dietary needs, then we recommend you heading over to our <a href="nutrients_tracker.html" target="_blank">Nutrients Tracker</a> and filling out a little questionarre. If a particular healthy_fat is not to your liking, then feel free to delete it by selecting the checkbox next to the healthy_fat and clicking the <em>'Remove Selected healthy_fats'</em> button. In order to remove all 6 healthy_fats from your grocery shortlist, click on the <em>'Clear healthy_fat Combination'</em> button. Enjoy!</p>
+<br>
+<h2 style="color: purple;">Selected Healthy Fat Nutrition Values:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" class="purple" onclick="hidehealthy_fatNutrition()" id="hidehealthy_fatNutrition">Hide healthy_fat Nutrition Information</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" class="purple" onclick="showhealthy_fatNutrition()" id="showhealthy_fatNutrition" style="visibility: hidden;">Show healthy_fat Nutrition Information</button></h2>
+<br>
+<div id="healthy_fatNutrition">
+<h3 id="healthy_fat1_title" style="color: lightgray;">Healthy Fat 1 Nutrition Information:</h3>
+<ul id="healthy_fat1Info" style="color: lightgray; background-color: white;">
+<li id="healthy_fat1_calories"></li>
+<li id="healthy_fat1_protein"></li>
+<li id="healthy_fat1_fat"></li>
+<li id="healthy_fat1_iron"></li>
+<li id="healthy_fat1_calcium"></li>
+<li id="healthy_fat1_vitaminA"></li>
+<li id="healthy_fat1_vitaminB"></li>
+<li id="healthy_fat1_vitaminC"></li>
+<li id="healthy_fat1_vitaminD"></li>
+<li id="healthy_fat1_vitaminK"></li>
+</ul>
+
+<h3 id="healthy_fat2_title" style="color: lightgray;">Healthy Fat 2 Nutrition Information:</h3>
+<ul id="healthy_fat2Info" style="color: lightgray; background-color: white;">
+<li id="healthy_fat2_calories"></li>
+<li id="healthy_fat2_protein"></li>
+<li id="healthy_fat2_fat"></li>
+<li id="healthy_fat2_iron"></li>
+<li id="healthy_fat2_calcium"></li>
+<li id="healthy_fat2_vitaminA"></li>
+<li id="healthy_fat2_vitaminB"></li>
+<li id="healthy_fat2_vitaminC"></li>
+<li id="healthy_fat2_vitaminD"></li>
+<li id="healthy_fat2_vitaminK"></li>
+</ul>
+
+<h3 id="healthy_fat3_title" style="color: lightgray;">Healthy Fat 3 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="healthy_fat3Info">
+<li id="healthy_fat3_calories"></li>
+<li id="healthy_fat3_protein"></li>
+<li id="healthy_fat3_fat"></li>
+<li id="healthy_fat3_iron"></li>
+<li id="healthy_fat3_calcium"></li>
+<li id="healthy_fat3_vitaminA"></li>
+<li id="healthy_fat3_vitaminB"></li>
+<li id="healthy_fat3_vitaminC"></li>
+<li id="healthy_fat3_vitaminD"></li>
+<li id="healthy_fat3_vitaminK"></li>
+</ul>
+
+<h3 id="healthy_fat4_title" style="color: lightgray;">Healthy Fat 4 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="healthy_fat4Info">
+<li id="healthy_fat4_calories"></li>
+<li id="healthy_fat4_protein"></li>
+<li id="healthy_fat4_fat"></li>
+<li id="healthy_fat4_iron"></li>
+<li id="healthy_fat4_calcium"></li>
+<li id="healthy_fat4_vitaminA"></li>
+<li id="healthy_fat4_vitaminB"></li>
+<li id="healthy_fat4_vitaminC"></li>
+<li id="healthy_fat4_vitaminD"></li>
+<li id="healthy_fat4_vitaminK"></li>
+</ul>
+
+<h3 id="healthy_fat5_title" style="color: lightgray;">Healthy Fat 5 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="healthy_fat5Info">
+<li id="healthy_fat5_calories"></li>
+<li id="healthy_fat5_protein"></li>
+<li id="healthy_fat5_fat"></li>
+<li id="healthy_fat5_iron"></li>
+<li id="healthy_fat5_calcium"></li>
+<li id="healthy_fat5_vitaminA"></li>
+<li id="healthy_fat5_vitaminB"></li>
+<li id="healthy_fat5_vitaminC"></li>
+<li id="healthy_fat5_vitaminD"></li>
+<li id="healthy_fat5_vitaminK"></li>
+</ul>
+
+<h3 id="healthy_fat6_title" style="color: lightgray;">Healthy Fat 6 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="healthy_fat6Info">
+<li id="healthy_fat6_calories"></li>
+<li id="healthy_fat6_protein"></li>
+<li id="healthy_fat6_fat"></li>
+<li id="healthy_fat6_iron"></li>
+<li id="healthy_fat6_calcium"></li>
+<li id="healthy_fat6_vitaminA"></li>
+<li id="healthy_fat6_vitaminB"></li>
+<li id="healthy_fat6_vitaminC"></li>
+<li id="healthy_fat6_vitaminD"></li>
+<li id="healthy_fat6_vitaminK"></li>
+</ul>
+</div>
+
+
+
+</div>
+<br><br><br>
+</div>
+
+
+<div id="alternatives">
+<h1 style="color: maroon;"><u>dairy/meat alternatives</u></h1>
+<br>
+<p style="color: maroon"><strong>Transitioning into a vegan diet may be difficult, especially for the first few months, but these dairy and meat substitutes can make the transition easier. Substitutes such as soy milk for calf milk and tofu burgers for cheeseburgers are still within the constraints of a vegan diet, but still retain the flavors and textures of your favorite non-vegan foods.</p></strong>
+<br>
+
+<form action="">
+  <label>Please enter 6 dairy/meat alternatives into the grocery list based on your tastes. You may select the dairy/meat alternartives from the list below or type out your own alternative. </label>
+  <input list="foods_alternative" id="foodsInput_alternative" style="border: 2px solid maroon;">
+  <datalist id="foods_alternative">
+    <option value="Almond Milk (cups)"/>
+    <option value="Soy Milk (cups)"/>
+    <option value="Coconut Milk (cups)"/>
+    <option value="Rice Milk (cups)"/>
+    <option value="Soy Yogurt (cups)"/>
+    <option value="Tempeh (cups)"/>
+    <option value="Tofu (cups)"/>
+    <option value="Seitan (cups)"/>
+    <option value="Textured Vegetable Protein (cups)"/>
+    <option value="Soy ice cream (cups)"/>
+  </datalist>
+  <button type="button" onclick="submitalternatives()" class="maroon">Submit alternative</button>
+  </form>
+<br><br>
+<h3 style="color: maroon;">Entered dairy/meat alternatives:</h3>
+<ol>
+<li style="color: lightgray;"><input type="checkbox" id="alternative1"><label id="alternativeOne">alternative 1</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="alternative2"><label id="alternativeTwo">alternative 2</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="alternative3"><label id="alternativeThree">alternative 3</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="alternative4"><label id="alternativeFour">alternative 4</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="alternative5"><label id="alternativeFive">alternative 5</label></li><br>
+<li style="color: lightgray;"><input type="checkbox" id="alternative6"><label id="alternativeSix">alternative 6</label></li><br>
+</ol>
+<br>
+<button type="button" onclick="deletealternatives()" class="maroon">Remove Selected Alternatives</button>
+<button type="button" onclick="clearalternatives()" class="maroon">Clear Alternative Combination</button>
+<br><br>
+<p><mark style="color: maroon;"><strong>Now that you have chosen 6 dairy/meat alternatives to potentially add to your grocery list based on your tastes</mark></strong>, it is now time to view these alternatives' nutrition values in order for you to full decide whether they belong in your grocery list. If you are unsure about your dietary needs, then we recommend you heading over to our <a href="nutrients_tracker.html" target="_blank">Nutrients Tracker</a> and filling out a little questionarre. If a particular alternative is not to your liking, then feel free to delete it by selecting the checkbox next to the alternative and clicking the <em>'Remove Selected alternatives'</em> button. In order to remove all 6 alternatives from your grocery shortlist, click on the <em>'Clear alternative Combination'</em> button. Enjoy!</p>
+<br>
+<h2 style="color: maroon;">Selected Dairy/Meat Alternatives Nutrition Values:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="hidealternativeNutrition()" class="maroon" id="hidealternativeNutrition">Hide alternative Nutrition Information</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="button" onclick="showalternativeNutrition()" class="maroon" id="showalternativeNutrition" style="visibility: hidden;">Show alternative Nutrition Information</button></h2>
+<br>
+<div id="alternativeNutrition">
+<h3 id="alternative1_title" style="color: lightgray;">Alternative 1 Nutrition Information:</h3>
+<ul id="alternative1Info" style="color: lightgray; background-color: white;">
+<li id="alternative1_calories"></li>
+<li id="alternative1_protein"></li>
+<li id="alternative1_fat"></li>
+<li id="alternative1_iron"></li>
+<li id="alternative1_calcium"></li>
+<li id="alternative1_vitaminA"></li>
+<li id="alternative1_vitaminB"></li>
+<li id="alternative1_vitaminC"></li>
+<li id="alternative1_vitaminD"></li>
+<li id="alternative1_vitaminK"></li>
+</ul>
+
+<h3 id="alternative2_title" style="color: lightgray;">Alternative 2 Nutrition Information:</h3>
+<ul id="alternative2Info" style="color: lightgray; background-color: white;">
+<li id="alternative2_calories"></li>
+<li id="alternative2_protein"></li>
+<li id="alternative2_fat"></li>
+<li id="alternative2_iron"></li>
+<li id="alternative2_calcium"></li>
+<li id="alternative2_vitaminA"></li>
+<li id="alternative2_vitaminB"></li>
+<li id="alternative2_vitaminC"></li>
+<li id="alternative2_vitaminD"></li>
+<li id="alternative2_vitaminK"></li>
+</ul>
+
+<h3 id="alternative3_title" style="color: lightgray;">Alternative 3 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="alternative3Info">
+<li id="alternative3_calories"></li>
+<li id="alternative3_protein"></li>
+<li id="alternative3_fat"></li>
+<li id="alternative3_iron"></li>
+<li id="alternative3_calcium"></li>
+<li id="alternative3_vitaminA"></li>
+<li id="alternative3_vitaminB"></li>
+<li id="alternative3_vitaminC"></li>
+<li id="alternative3_vitaminD"></li>
+<li id="alternative3_vitaminK"></li>
+</ul>
+
+<h3 id="alternative4_title" style="color: lightgray;">Alternative 4 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="alternative4Info">
+<li id="alternative4_calories"></li>
+<li id="alternative4_protein"></li>
+<li id="alternative4_fat"></li>
+<li id="alternative4_iron"></li>
+<li id="alternative4_calcium"></li>
+<li id="alternative4_vitaminA"></li>
+<li id="alternative4_vitaminB"></li>
+<li id="alternative4_vitaminC"></li>
+<li id="alternative4_vitaminD"></li>
+<li id="alternative4_vitaminK"></li>
+</ul>
+
+<h3 id="alternative5_title" style="color: lightgray;">Alternative 5 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="alternative5Info">
+<li id="alternative5_calories"></li>
+<li id="alternative5_protein"></li>
+<li id="alternative5_fat"></li>
+<li id="alternative5_iron"></li>
+<li id="alternative5_calcium"></li>
+<li id="alternative5_vitaminA"></li>
+<li id="alternative5_vitaminB"></li>
+<li id="alternative5_vitaminC"></li>
+<li id="alternative5_vitaminD"></li>
+<li id="alternative5_vitaminK"></li>
+</ul>
+
+<h3 id="alternative6_title" style="color: lightgray;">Alternative 6 Nutrition Information:</h3>
+<ul style="color: lightgray; background-color: white;" id="alternative6Info">
+<li id="alternative6_calories"></li>
+<li id="alternative6_protein"></li>
+<li id="alternative6_fat"></li>
+<li id="alternative6_iron"></li>
+<li id="alternative6_calcium"></li>
+<li id="alternative6_vitaminA"></li>
+<li id="alternative6_vitaminB"></li>
+<li id="alternative6_vitaminC"></li>
+<li id="alternative6_vitaminD"></li>
+<li id="alternative6_vitaminK"></li>
+</ul>
+</div>
+
+
+
+</div>
+<br><br><br>
+</div>
+
+<div id="final">
+
+<h1 style="color: #4db8ff;"><u>final grocery list</u></h1><br>
+
+<p style="color: #4db8ff;"><strong><u>CONGRATULATIONS</u> - you just created your very own vegan grocery list! This is your final grocery list, compiling the 6 foods you have previously entered for each food group. Feel free to remove any items from your grocery list as you please by selecting them and clicking on the <em>Remove Selected Foods</em> button below.</p></strong>
+<br><br>
+
+<!--<div style="text-align: center;"><button type="button" id="viewGroceryList" onclick="viewGroceryList()">CLICK HERE TO VIEW YOUR FINAL GROCERY LIST!</button></div>-->
+
+<h3 style="color: red;"><u>fruits:</u></h3>
+
+<ol>
+  <li style="color: lightgray;"><input type="checkbox" id="fruit1_final"><label id="fruitOne_final">Fruit 1</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="fruit2_final"><label id="fruitTwo_final">Fruit 2</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="fruit3_final"><label id="fruitThree_final">Fruit 3</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="fruit4_final"><label id="fruitFour_final">Fruit 4</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="fruit5_final"><label id="fruitFive_final">Fruit 5</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="fruit6_final"><label id="fruitSix_final">Fruit 6</label></li><br>
+</ol>
+
+<h3 style="color: green;"><u>vegetables:</u></h3>
+
+<ol>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable1_final"><label id="vegetableOne_final">Vegetable 1</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable2_final"><label id="vegetableTwo_final">Vegetable 2</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable3_final"><label id="vegetableThree_final">Vegetable 3</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable4_final"><label id="vegetableFour_final">Vegetable 4</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable5_final"><label id="vegetableFive_final">Vegetable 5</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="vegetable6_final"><label id="vegetableSix_final">Vegetable 6</label></li><br>
+</ol>
+
+<h3 style="color: #cc9900;"><u>starches:</u></h3>
+
+<ol>
+  <li style="color: lightgray;"><input type="checkbox" id="starch1_final"><label id="starchOne_final">Starch 1</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="starch2_final"><label id="starchTwo_final">Starch 2</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="starch3_final"><label id="starchThree_final">Starch 3</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="starch4_final"><label id="starchFour_final">Starch 4</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="starch5_final"><label id="starchFive_final">Starch 5</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="starch6_final"><label id="starchSix_final">Starch 6</label></li><br>
+</ol>
+
+<h3 style="color: purple;"><u>healthy fats:</u></h3>
+
+<ol>
+  <li style="color: lightgray;"><input type="checkbox" id="healthy_fat1_final"><label id="healthy_fatOne_final">Healthy Fat 1</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="healthy_fat2_final"><label id="healthy_fatTwo_final">Healthy Fat 2</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="healthy_fat3_final"><label id="healthy_fatThree_final">Healthy Fat 3</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="healthy_fat4_final"><label id="healthy_fatFour_final">Healthy Fat 4</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="healthy_fat5_final"><label id="healthy_fatFive_final">Healthy Fat 5</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="healthy_fat6_final"><label id="healthy_fatSix_final">Healthy Fat 6</label></li><br>
+</ol>
+
+<h3 style="color: maroon;"><u>dairy and meat alternatives:</u></h3>
+
+<ol>
+  <li style="color: lightgray;"><input type="checkbox" id="alternative1_final"><label id="alternativeOne_final">Alternative 1</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="alternative2_final"><label id="alternativeTwo_final">Alternative 2</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="alternative3_final"><label id="alternativeThree_final">Alternative 3</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="alternative4_final"><label id="alternativeFour_final">Alternative 4</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="alternative5_final"><label id="alternativeFive_final">Alternative 5</label></li><br>
+  <li style="color: lightgray;"><input type="checkbox" id="alternative6_final"><label id="alternativeSix_final">Alternative 6</label></li><br>
+</ol>
+<br><br>
+<button type="button" onclick="removeFoods()" class="blue">Remove the Selected Foods</button>
+
+</div>
+
+
+
+<br><br><br><br><br><br><br>
+<footer>
+  <p class="footer" style="color: white">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+  <p class="footer">Made with love in Schaumburg</p>
+</footer>

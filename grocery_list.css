@@ -1,0 +1,144 @@
+body {
+  font-family: Verdana;
+
+}
+header {
+    color: #003300;
+    background-color: white;
+}
+footer {
+    color: #e60000;
+    background-color: white;
+}
+p {
+  font-size: 18px;
+}
+#fruits, #vegetables,#starches,#healthy_fats, #alternatives {
+  line-height: 2;
+}
+a {
+  color: #ff6600;
+}
+.header {
+  display: inline-block;
+}
+
+.footer {
+  display: inline-block;
+}
+
+#title {
+  font-family: "Palatino";
+  text-align: center;
+  background-color: #cce6ff;
+
+}
+ul {
+  list-style-type: none;
+}
+#navbar {
+
+  margin: 0;
+  padding: 0;
+  width: 18%;
+  background-color: #f1f1f1;
+  /*position: fixed;*/
+  height: 100%;
+  overflow: auto;
+}
+#viewGroceryList {
+  border: 2px solid navy;
+  color: #4db8ff;
+  background-color: white;
+  font-size: 36px;
+}
+mark {
+  background-color: white;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4db8ff;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+input {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.blue {
+  background-color: #4db8ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.red {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.green {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.yellow {
+  background-color: #cc9900;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.purple {
+  background-color: #dab3ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.maroon {
+  background-color: maroon;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

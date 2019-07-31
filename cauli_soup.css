@@ -1,0 +1,66 @@
+body {
+  font-family: Verdana;
+}
+header {
+    color: #003300;
+    background-color: white;
+}
+footer {
+    color: #e60000;
+    background-color: white;
+    display: inline-block;
+}
+
+input {
+  padding: 10px 20px;
+  border: 2px solid orange;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a {
+  color: #ff6600;
+}
+.header {
+  display: inline-block;
+}
+
+.footer {
+  display: inline-block;
+}
+
+#title {
+  font-family: "Palatino";
+  text-align: center;
+  background-color: #ffdab3;
+}
+
+#title_image {
+  text-align: center;
+}
+
+#ingredients, #procedure, #info {
+  color: black;
+  line-height: 2;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+.checkboxes {
+  background-color: white;
+  border: none;
+}
+
+#line_break {
+  text-align: center;
+}
+button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

@@ -1,0 +1,42 @@
+body {
+  font-family: Verdana;
+}
+header {
+    color: #003300;
+    background-color: white;
+}
+footer {
+    color: #e60000;
+    background-color: white;
+}
+
+a {
+  color: #ff6600;
+}
+.header {
+  display: inline-block;
+}
+
+.footer {
+  display: inline-block;
+}
+
+#title {
+  font-family: "Palatino";
+  text-align: center;
+  background-color: #ccffdd;
+}
+#body p {
+  font-size: 18px;
+
+}
+#body {
+  line-height: 2;
+}
+h3 {
+  color: green;
+  font-weight: bold;
+}
+ul {
+  line-height: 2;
+}
